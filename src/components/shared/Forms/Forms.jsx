@@ -21,7 +21,7 @@ export const Forms = ({ }) => {
           <InputForms placeholder='Pon tu direccion' />
           <InputForms placeholder='Pon tu direccion' />
         </label>
-        <Button Text={'Registrar'} />
+        <Button Text={'Contactanos'} />
       </div>
     </form>
   )
