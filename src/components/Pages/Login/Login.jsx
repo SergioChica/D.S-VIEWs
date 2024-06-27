@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Forms } from '../../shared/Forms/Forms'
+import { Formsreg } from '../../Shared/Forms/Forms'
 
 
 export const Login = () => {
@@ -92,7 +92,7 @@ export const Login = () => {
 </linearGradient>
 </defs>
 </svg>
-      <Forms />
+      <Formsreg />
       <div className='w-[80px] h-[83px] bg-[#FE7A3659] rounded-[50%] top-[5%]  right-[12%] absolute ' />
       <div className='w-[126px] h-[123px] bg-[#FF9F2E59] rounded-[50%] top-[20%]  right-[8%] absolute ' />
     </div>
