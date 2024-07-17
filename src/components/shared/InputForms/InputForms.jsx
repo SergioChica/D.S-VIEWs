@@ -24,6 +24,18 @@ export const InputFormslog = ({placeholder}) => {
   )
 }
 
+export const InputFormslog2 = ({placeholder}) => {
+  return (
+    <>
+    <div className='w-[380px] h-[64px]  p-1 rounded-[5px] bg-[#692FDB]'>
+      <div className=' w-full h-full bg-[#efeeee] flex items-center justify-center'>
+            <input type="text" placeholder={placeholder} className='w-full h-full text-[#3f3d56] placeholder-[#3f3d56] bg-[#efeeee] text-[25px] indent-[20px] rounded-[4px] ' />
+      </div>
+    </div>
+    </>
+  )
+}
+
 export const Inputrecuerdame = ({placeholder}) => {
   return (
     <>
@@ -39,10 +51,10 @@ export const Inputrecuerdame = ({placeholder}) => {
   )
 }
 
-export const Inputolvi = ({placeholder}) => {
+export const Inputolvi = ({placeholder, onClick}) => {
   return (
-      <div className=' w-[180px]'>
-        <p className='w-[200px] placeholder-[#3f3d56] text-[15px]' >{placeholder}</p>
+      <div onClick={() => onClick && onClick()} className=' w-[220px] cursor-pointer'>
+        <p className='w-[230px] placeholder-[#3f3d56] text-[15px]' >{placeholder}</p>
         <hr className='h-[4px] bg-[#3f3d56] rounded-[1px]' />
       </div>
       
