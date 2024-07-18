@@ -33,7 +33,7 @@ export const LoginAdmin = () => {
 <stop offset="0.859857" stop-color="#381975" stop-opacity="0.6"/>
 </linearGradient>
 </defs>
-<text className='pointer-events-none ' x="30.5%" y="35%" fill="white" fontSize="24px">odaelpmE</text>
+<text className='pointer-events-none' x="30.5%" y="35%" fill="white" fontSize="24px">uı̣ɯpɐ</text>
 </svg>
 
       </div>

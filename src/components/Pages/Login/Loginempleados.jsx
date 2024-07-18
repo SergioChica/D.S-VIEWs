@@ -30,7 +30,7 @@ export const LoginEmpleados = () => {
 <stop offset="0.859857" stop-color="#FF9F2E" stop-opacity="0.6"/>
 </linearGradient>
 </defs>
-<text className='pointer-events-none' x="27.5%" y="55%" fill="white" fontSize="24px">Empleado</text>
+<text className='pointer-events-none' x="27.5%" y="55%" fill="white" fontSize="24px">empleado</text>
 </svg>
 
       </div>
