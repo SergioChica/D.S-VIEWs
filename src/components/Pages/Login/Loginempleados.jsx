@@ -9,7 +9,7 @@ export const LoginEmpleados = () => {
   return (
     <div className='w-full h-full flex flex-1 items-center relative'>
       <div>
-<svg className="w-[470px] h-[488px] absolute bottom-[25rem] " width="299" height="186" viewBox="0 0 299 186" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg className="w-[470px] h-[488px] absolute bottom-[28rem] " width="299" height="186" viewBox="0 0 299 186" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path className='cursor-pointer ' onClick={() => setLocation("/loginadmin")}
             fill="url(#paint0_linear_425_3047)" transform="translate(0 32)">
             <animate attributeName='d' dur="18000ms" repeatCount="indefinite"
