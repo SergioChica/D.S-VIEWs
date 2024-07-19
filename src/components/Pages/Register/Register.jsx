@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
-
 import { Formsreg } from '../../Shared/Forms/Forms'
 import { AppContext } from '../../../contexts/app.context'
+
 
 
 export const Register = () => {

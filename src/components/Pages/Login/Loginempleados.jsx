@@ -1,6 +1,4 @@
-import React, { useContext, useState } from 'react'
 import { Formslogempleado } from '../../Shared/Forms/Forms'
-import { Buttonlog } from '../../Shared/Button/Buttons'
 import { useLocation } from 'wouter'
 
 
@@ -30,7 +28,7 @@ export const LoginEmpleados = () => {
 <stop offset="0.859857" stop-color="#FF9F2E" stop-opacity="0.6"/>
 </linearGradient>
 </defs>
-<text className='pointer-events-none' x="27.5%" y="55%" fill="white" fontSize="24px">empleado</text>
+<text className='pointer-events-none' x="23.5%" y="55%" fill="white" fontSize="24px">empleado</text>
 </svg>
 
       </div>

@@ -1,9 +1,11 @@
 import { Register } from "./components/Pages/Register/Register"
 import { LoginEmpleados } from "./components/Pages/Login/Loginempleados"
 import { LoginAdmin } from "./components/Pages/Login/Loginadmin"
-import React, { useEffect, useState } from "react"
 import { Route, Switch } from "wouter"
 import { AppContextProvider } from "./contexts/app.context"
+import { Home } from "./components/Pages/Home/Home"
+
+
 
 function App() {
   return (
@@ -16,8 +18,8 @@ function App() {
           <Route path="/loginempleados">
             <LoginEmpleados />
           </Route>
-          <Route path="/register">
-            <Register />
+          <Route path="/home">
+            <Home />
           </Route>
           <Route>
             <div>404: No such page</div>
