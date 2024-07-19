@@ -1,10 +1,12 @@
 import React from 'react'
-import { Buttonfilter } from '../../Shared/Button/Buttons'
+import { Buttonfilter } from '../../shared/Button/Buttons'
 import { FaUserCircle } from "react-icons/fa";
-import { Perfilcontenedor } from '../../Shared/InputForms/InputForms';
+import { Perfilcontenedor } from '../../shared/InputForms/InputForms';
+import { useLocation } from 'wouter'
 
 
 export const Home = () => {
+  const [location, setLocation] = useLocation();
   return (
     <div className=' bg-[#F0ECE3] w-full h-full flex flex-col flex-1 items-center relative'>
       <div className=' w-[50rem] flex items-center justify-between mt-[3rem]'>
@@ -35,7 +37,7 @@ export const Home = () => {
     <Perfilcontenedor nombre={'Jeronimo arias msoquera'} documeto={'CC:1092456050'} customClassName={'m-[1rem] text-[18px] text-white bg-gradient-to-r from-[#FF9F2E]  to-[#FE7A36] px-[3rem] py-[0.5rem] rounded-[10px] shadow-md '} /> 
     </div>
     <button className='bg-[#FE7A36] rounded-full w-[4rem] h-[4rem] absolute bottom-[3rem] right-[22rem]' >
-      <div className='flex justify-center'>
+      <div className='flex justify-center' onClick={() => setLocation("/createusers")}>
       <svg width="40" height="40" viewBox="0 0 105 112" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M51 13L51 99" stroke="#F0ECE3" stroke-width="25" stroke-linecap="round"/>
 <path d="M92 53L13 53.9997" stroke="#F0ECE3" stroke-width="25" stroke-linecap="round"/>

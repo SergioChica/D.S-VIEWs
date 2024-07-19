@@ -4,11 +4,35 @@ import {
   InputFormslog,
   InputFormslog2,
   Inputrecuerdame,
+  InputFormsUsers,
   Inputolvi,
 } from "../InputForms/InputForms";
-import { Buttonlog, Buttonlog2 } from "../Button/Buttons";
+import { Buttonlog, Buttonlog2, ButtonUsers } from "../Button/Buttons";
 import { FaUserCircle } from "react-icons/fa";
 import { useLocation } from 'wouter'
+
+export const FormsUsers = ({ }) => {
+
+  return (
+    <form className='absolute w-[600px] flex flex-col justify-center top-[10%] right-[30%] gap-[60px] items-center '>
+      <div className='flex flex-col items-center gap-[20px] '>
+        <h2 className='text-[#381975] font-medium text-[62px] '>Inscripción</h2>
+      </div>
+      <div className='flex flex-col items-center gap-[40px]'>
+        <label className='flex flex-wrap justify-between gap-y-[20px] '>
+          <InputFormsUsers type={'text'} placeholder='Pon tu Nombre'  />
+          <InputFormsUsers type={'text'} placeholder='Pon tu Apellido' />
+          <InputFormsUsers type={'email'} placeholder='Pon tu Correo' />
+          <InputFormsUsers type={'text'} placeholder='Pon tu Telefono' />
+          <InputFormsUsers type={'text'} placeholder='Pon tu Direccion' />
+          <InputFormsUsers type={'text'} placeholder='Pon tu Asistencia' />
+          <InputFormsUsers type={'text'} placeholder='Pon tu Numero de Centro' />
+        </label>
+        <ButtonUsers Text={'Crear Usuario'}  />
+      </div>
+    </form>
+  )
+}
 
 
 export const Formsreg = ({}) => {
@@ -38,7 +62,7 @@ export const Formsreg = ({}) => {
             />
           </div>
         </div>
-        <Buttonlog2 onClick= {() => setLocation("/loginempleados")} Text={"Contactanos"} width={"4rem"} />
+        <Buttonlog2 onClick= {() => setLocation("/loginempleados")} Text={"Contactanos"} width={"6rem"} />
       </div>
     </form>
   );
@@ -67,7 +91,9 @@ export const Formslogempleado = () => {
           <Inputrecuerdame placeholder="recuerdame" />
 
         </div>
+        <div onClick={() => setLocation("/")}>
         <Buttonlog Text={"Iniciar"} />
+        </div>
       </div>
     </form>
   );

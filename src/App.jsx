@@ -4,6 +4,7 @@ import { LoginAdmin } from "./components/Pages/Login/Loginadmin"
 import { Route, Switch } from "wouter"
 import { AppContextProvider } from "./contexts/app.context"
 import { Home } from "./components/Pages/Home/Home"
+import { CreateUsers } from "./components/Pages/create/CreateUsers/CreateUsers"
 
 
 
@@ -18,8 +19,14 @@ function App() {
           <Route path="/loginempleados">
             <LoginEmpleados />
           </Route>
-          <Route path="/home">
+          <Route path="/register">
+            <Register />
+          </Route>
+          <Route path="/">
             <Home />
+          </Route>
+          <Route path="/createusers">
+            <CreateUsers />
           </Route>
           <Route>
             <div>404: No such page</div>

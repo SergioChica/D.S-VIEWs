@@ -1,5 +1,5 @@
 import React from 'react'
-import { Formslogadmin } from '../../Shared/Forms/Forms'
+import { Formslogadmin } from '../../shared/Forms/Forms'
 import { useLocation } from 'wouter'
 
 

@@ -1,4 +1,4 @@
-import { Formslogempleado } from '../../Shared/Forms/Forms'
+import { Formslogempleado } from '../../shared/Forms/Forms'
 import { useLocation } from 'wouter'
 
 
