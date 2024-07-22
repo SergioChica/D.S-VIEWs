@@ -3,12 +3,17 @@ import { Buttonfilter } from '../../shared/Button/Buttons'
 import { FaUserCircle } from "react-icons/fa";
 import { Perfilcontenedor } from '../../shared/InputForms/InputForms';
 import { useLocation } from 'wouter'
+import { SideBarHome } from '../../shared/SideBarHome/SideBarHome';
+
 
 
 export const Home = () => {
   const [location, setLocation] = useLocation();
   return (
     <div className=' bg-[#F0ECE3] w-full h-full flex flex-col flex-1 items-center relative'>
+      <SideBarHome>
+        
+      </SideBarHome>
       <div className=' w-[50rem] flex items-center justify-between mt-[3rem]'>
         <div className='w-[4.6rem] h-[4.6rem] bg-[#FE7A36] flex items-center justify-center rounded-full cursor-pointer'>
         <FaUserCircle className="text-[60px] text-white " />
