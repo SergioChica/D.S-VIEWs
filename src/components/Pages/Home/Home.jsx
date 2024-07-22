@@ -24,8 +24,8 @@ export const Home = () => {
 </svg>
       </div>
     <div className='flex items-center justify-center  w-[80rem] h-full mt-[5px]'>
-    <Buttonfilter Text={'Horario'} customClassName={'m-[1rem] text-[30px] text-white bg-gradient-to-r from-[#FF9F2E]  to-[#FE7A36] px-[3rem] py-[0.5rem] rounded-[10px] shadow-md '}/>
-    <Buttonfilter Text={'Categoria'} customClassName={'m-[1rem] text-[30px] text-white bg-gradient-to-r from-[#692FDB]  to-[#381975] px-[2rem] py-[0.5rem] rounded-[10px] shadow-md '}/>
+    <Buttonfilter Text={'Horario'} customClassName={'m-[1rem] text-[30px] text-white bg-gradient-to-r from-[#1E1E1E]  to-[#3F3D56] px-[3rem] py-[0.5rem] rounded-[10px] shadow-md '}/>
+    <Buttonfilter Text={'Categoria'} customClassName={'m-[1rem] text-[30px] text-white bg-gradient-to-r from-[#1E1E1E]  to-[#3F3D56] px-[2rem] py-[0.5rem] rounded-[10px] shadow-md '}/>
     <Buttonfilter Text={'Membresia'} customClassName={'m-[1rem] text-[30px] text-white bg-gradient-to-r from-[#1E1E1E]  to-[#3F3D56] px-[1.5rem] py-[0.5rem] rounded-[10px] shadow-md '}/>
     </div>
     <label className="flex flex-col items-center justify-center">
@@ -35,23 +35,10 @@ export const Home = () => {
     <div className=' h-[22rem] w-[34rem] overflow-y-scroll '>
     <Perfilcontenedor nombre={'Jeronimo arias msoquera'} documeto={'CC:1092456050'} customClassName={'m-[1rem] text-[18px] text-white bg-gradient-to-r from-[#FF9F2E]  to-[#FE7A36] px-[3rem] py-[0.5rem] rounded-[10px] shadow-md '} />   
     <Perfilcontenedor nombre={'Jeronimo arias msoquera'} documeto={'CC:1092456050'} customClassName={'m-[1rem] text-[18px] text-white bg-gradient-to-r from-[#692FDB]  to-[#381975] px-[3rem] py-[0.5rem] rounded-[10px] shadow-md '} /> 
-    <Perfilcontenedor nombre={'Jeronimo arias msoquera'} documeto={'CC:1092456050'} customClassName={'m-[1rem] text-[18px] text-white bg-gradient-to-r from-[#3F3D56]  to-[#3F3D56] px-[3rem] py-[0.5rem] rounded-[10px] shadow-md '} />  
     <Perfilcontenedor nombre={'Jeronimo arias msoquera'} documeto={'CC:1092456050'} customClassName={'m-[1rem] text-[18px] text-white bg-gradient-to-r from-[#692FDB]  to-[#381975] px-[3rem] py-[0.5rem] rounded-[10px] shadow-md '} />
-    <Perfilcontenedor nombre={'Jeronimo arias msoquera'} documeto={'CC:1092456050'} customClassName={'m-[1rem] text-[18px] text-white bg-gradient-to-r from-[#3F3D56]  to-[#3F3D56] px-[3rem] py-[0.5rem] rounded-[10px] shadow-md '} />  
     <Perfilcontenedor nombre={'Jeronimo arias msoquera'} documeto={'CC:1092456050'} customClassName={'m-[1rem] text-[18px] text-white bg-gradient-to-r from-[#FF9F2E]  to-[#FE7A36] px-[3rem] py-[0.5rem] rounded-[10px] shadow-md '} /> 
     <Perfilcontenedor nombre={'Jeronimo arias msoquera'} documeto={'CC:1092456050'} customClassName={'m-[1rem] text-[18px] text-white bg-gradient-to-r from-[#FF9F2E]  to-[#FE7A36] px-[3rem] py-[0.5rem] rounded-[10px] shadow-md '} /> 
     </div>
-    <button className='bg-[#FE7A36] rounded-full w-[4rem] h-[4rem] absolute bottom-[3rem] right-[22rem]' >
-      <div className='flex justify-center' onClick={() => setLocation("/createusers")}>
-      <svg width="40" height="40" viewBox="0 0 105 112" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M51 13L51 99" stroke="#F0ECE3" stroke-width="25" stroke-linecap="round"/>
-<path d="M92 53L13 53.9997" stroke="#F0ECE3" stroke-width="25" stroke-linecap="round"/>
-</svg>
-
-      </div>
-
-
-    </button>
     </div>
   )
 }
