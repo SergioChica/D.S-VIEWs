@@ -4,14 +4,13 @@ import {
   InputFormslog,
   InputFormslog2,
   Inputrecuerdame,
-  InputFormsUsers,
   Inputolvi,
 } from "../InputForms/InputForms";
 import { Buttonlog, Buttonlog2, ButtonUsers } from "../Button/Buttons";
 import { FaUserCircle } from "react-icons/fa";
 import { useLocation } from 'wouter'
 
-export const FormsUsers = ({ }) => {
+export const FormsUsers = ({ }) => { 
 
   return (
     <form className='absolute w-[600px] flex flex-col justify-center top-[10%] right-[30%] gap-[60px] items-center '>
@@ -62,7 +61,9 @@ export const Formsreg = ({}) => {
             />
           </div>
         </div>
-        <Buttonlog2 onClick= {() => setLocation("/loginempleados")} Text={"Contactanos"} width={"6rem"} />
+        <div onClick= {() => setLocation("/")} >
+        <Buttonlog2 Text={"Contactanos"} width={"6rem"} />
+        </div>
       </div>
     </form>
   );
