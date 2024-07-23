@@ -19,7 +19,7 @@ export const Buttonlog = ({Text, width}) => {
 export const Buttonlog2 = ({onClick,Text, width}) => {
   return (
     <div >
-    <button type='submit'  onClick={onClick} className={` w-[${width}] mb-[2rem] mt-[1rem] text-[30px] text-white bg-gradient-to-r from-[#692FDB]  to-[#381975] px-[3rem] py-[0.5rem] rounded-[10px] shadow-md `}>{Text}</button>
+    <button type='button'  onClick={onClick} className={` w-[${width}] mb-[2rem] mt-[1rem] text-[30px] text-white bg-gradient-to-r from-[#692FDB]  to-[#381975] px-[3rem] py-[0.5rem] rounded-[10px] shadow-md `}>{Text}</button>
     </div>
   )
 }
