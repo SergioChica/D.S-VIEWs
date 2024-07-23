@@ -1,6 +1,6 @@
 import React, {useContext} from 'react'
-import { FormsUsers } from '../../../Shared/Forms/Forms'
-import { ModalCreate } from '../../../Shared/ModalCreate/ModalCreate'
+import { FormsUsers } from '../../../shared/Forms/Forms'
+import { ModalCreate } from '../../../shared/ModalCreate/ModalCreate'
 import { StateContext } from '../../../Context/Context'
 import { FaRegCheckCircle } from 'react-icons/fa'
 

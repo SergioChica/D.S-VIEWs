@@ -1,4 +1,4 @@
-import { Formslogempleado } from '../../Shared/Forms/Forms'
+import { Formslogempleado } from '../../shared/Forms/Forms'
 import { useLocation } from 'wouter'
 
 
@@ -7,7 +7,7 @@ export const LoginEmpleados = () => {
   return (
     <div className='w-full h-full flex flex-1 items-center relative'>
       <div>
-<svg className="w-[470px] h-[488px] absolute bottom-[28rem] " width="299" height="186" viewBox="0 0 299 186" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg className="w-[470px] h-[488px] absolute bottom-[28rem] 2xl:w-[350px] 2xl:h-[368px] 2xl:bottom-[25rem]" width="299" height="186" viewBox="0 0 299 186" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path className='cursor-pointer ' onClick={() => setLocation("/loginadmin")}
             fill="url(#paint0_linear_425_3047)" transform="translate(0 32)">
             <animate attributeName='d' dur="18000ms" repeatCount="indefinite"
@@ -32,7 +32,7 @@ export const LoginEmpleados = () => {
 </svg>
 
       </div>
-      <svg className="w-[300px] h-[388px] absolute top-[22rem] right-[4rem] " width="192" height="158" viewBox="0 0 192 158" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg className="w-[300px] h-[388px] absolute top-[22rem] right-[4rem]  2xl:w-[200px] 2xl:h-[245px] 2xl:top-[22rem]" width="192" height="158" viewBox="0 0 192 158" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path opacity="0.18" d="M188.229 101.252C185.301 109.736 180.501 117.456 174.189 123.836C168.717 129.416 162.229 133.896 155.073 137.036C150.221 139.168 145.089 140.588 139.829 141.244C128.065 142.684 114.785 141.724 103.549 145.832C92.613 149.832 84.185 156.852 72.053 157.672C62.105 158.344 51.589 155.932 41.757 151.388C34.793 148.156 28.305 143.984 22.481 138.984C9.96498 128.204 1.11698 114.028 0.440978 99.8281C-0.103022 88.5201 5.12498 75.2881 14.409 69.0281C24.473 62.2601 31.057 52.3201 36.985 41.9481C43.957 29.7561 51.057 16.6801 63.217 9.6561C73.101 3.9481 86.849 1.8441 98.045 0.820096C100.845 0.564096 147.421 -2.9559 174.273 30.9441C189.413 50.0721 196.081 78.0481 188.229 101.252Z" fill="#FE7A36" />
         <path d="M100.225 13.3877H70.9609V42.9917H100.225V13.3877Z" fill="url(#paint0_linear_0_1)" />
         <path d="M62.7906 83.3882C62.1106 83.1922 61.4106 83.0882 60.7026 83.0762C59.8226 83.1282 58.9586 83.3122 58.1346 83.6242C56.9546 84.0202 55.7986 84.4802 54.6706 85.0002C54.0866 85.2682 53.4266 85.6722 53.3906 86.3122C54.2426 86.8322 55.3346 86.5322 56.2986 86.2682C57.2786 86.0002 58.2706 85.7842 59.2706 85.6242C58.7066 86.7082 58.2746 87.8602 57.9826 89.0482C57.7986 89.5842 57.8066 90.1642 58.0026 90.6962C58.2786 91.2522 58.8946 91.5362 59.4666 91.7762C60.6106 92.2602 61.8306 92.7482 63.0666 92.5522C63.8026 92.3922 64.5106 92.1042 65.1506 91.7042L66.5786 90.9282C66.6866 90.8802 66.7786 90.8082 66.8546 90.7162C66.9066 90.6242 66.9426 90.5242 66.9546 90.4202L67.4946 87.6882C67.5946 87.1602 68.1746 85.5962 67.8946 85.1642C67.7426 84.9402 66.9626 84.7642 66.6946 84.6842C66.2746 84.5242 65.8546 84.3642 65.4306 84.2122C64.5506 83.9042 63.6786 83.6162 62.7906 83.3882Z" fill="#FFB4A3" />

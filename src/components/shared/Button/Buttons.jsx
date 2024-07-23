@@ -11,7 +11,7 @@ export const ButtonUsers = ({Text, width="38%", onClick}) => {
 export const Buttonlog = ({Text, width}) => {
   return (
     <>
-    <button onClick={() => onClick && onClick()} className={` w-[${width}] mb-[2rem] mt-[1rem] text-[30px] text-white bg-gradient-to-r from-[#FF9F2E]  to-[#FE7A36] px-[3rem] py-[0.5rem] rounded-[10px] shadow-md `}>{Text}</button>
+    <button onClick={() => onClick && onClick()} className={` w-[${width}] mb-[2rem] mt-[1rem] text-[30px] text-white bg-gradient-to-r from-[#FF9F2E]  to-[#FE7A36] px-[3rem] py-[0.5rem] rounded-[10px] shadow-md 2xl:text-[25px]`}>{Text}</button>
     </>
   )
 }
@@ -19,7 +19,7 @@ export const Buttonlog = ({Text, width}) => {
 export const Buttonlog2 = ({Text, width}) => {
   return (
     <div >
-    <button  onClick={() => onClick && onClick()} className={` w-[${width}] mb-[2rem] mt-[1rem] text-[30px] text-white bg-gradient-to-r from-[#692FDB]  to-[#381975] px-[3rem] py-[0.5rem] rounded-[10px] shadow-md `}>{Text}</button>
+    <button  onClick={() => onClick && onClick()} className={` w-[${width}] mb-[2rem] mt-[1rem] text-[30px]  text-white bg-gradient-to-r from-[#692FDB]  to-[#381975] px-[3rem] py-[0.5rem] rounded-[10px] shadow-md 2xl:text-[25px]`}>{Text}</button>
     </div>
   )
 }

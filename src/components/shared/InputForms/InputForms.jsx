@@ -17,7 +17,7 @@ export const InputFormsreg = ({ placeholder }) => {
 export const InputFormslog = ({ placeholder }) => {
   return (
     <>
-      <div className='w-[280px] h-[55px]  p-1 rounded-[5px] bg-[#FE7A36]'>
+      <div className='w-[280px] h-[55px]  p-1 rounded-[5px] bg-[#FE7A36] 2xl:w-[210px]'>
         <div className=' w-full h-full bg-[#efeeee] flex items-center justify-center'>
           <input type="text" placeholder={placeholder} className='w-full h-full text-[#3f3d56] placeholder-[#3f3d56] bg-[#efeeee] text-[20px] indent-[20px] rounded-[4px] ' />
         </div>
@@ -29,7 +29,7 @@ export const InputFormslog = ({ placeholder }) => {
 export const InputFormslog2 = ({ placeholder }) => {
   return (
     <>
-      <div className='w-[280px] h-[55px]  p-1 rounded-[5px] bg-[#692FDB]'>
+      <div className='w-[280px] h-[55px]  p-1 rounded-[5px] bg-[#692FDB] 2xl:w-[210px]'>
         <div className=' w-full h-full bg-[#efeeee] flex items-center justify-center'>
           <input type="text" placeholder={placeholder} className='w-full h-full text-[#3f3d56] placeholder-[#3f3d56] bg-[#efeeee] text-[20px] indent-[20px] rounded-[4px] ' />
         </div>

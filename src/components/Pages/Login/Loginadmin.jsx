@@ -1,5 +1,5 @@
 import React from 'react'
-import { Formslogadmin } from '../../Shared/Forms/Forms'
+import { Formslogadmin } from '../../shared/Forms/Forms'
 import { useLocation } from 'wouter'
 
 
@@ -10,7 +10,7 @@ export const LoginAdmin = () => {
     <div className='w-full h-full flex flex-1 items-center relative'>
       <div > 
 
-      <svg className="w-[470px] rotate-180 h-[488px] fixed right-[-1rem] top-[22rem] " width="316" height="235" viewBox="0 0 316 235" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg className="w-[470px] rotate-180 h-[488px] fixed right-[-1rem] top-[22rem] 2xl:w-[370px] 2xl:h-[388px]: 2xl:top-[17rem]" width="316" height="235" viewBox="0 0 316 235" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path className='cursor-pointer ' onClick={() => setLocation("/loginempleados")}
             fill="url(#paint0_linear_425_3047)" transform="translate(0 0)">
             <animate attributeName='d' dur="18000ms" repeatCount="indefinite"
@@ -37,7 +37,7 @@ export const LoginAdmin = () => {
 
       </div>
 
-      <svg className="w-[300px] h-[388px] absolute left-[4rem] bottom-[22rem] " width="192" height="158" viewBox="0 0 192 158" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg className="w-[300px] h-[388px] absolute left-[4rem] bottom-[22rem]   2xl:w-[200px] 2xl:h-[388px] 2xl:bottom-[20rem] " width="192" height="158" viewBox="0 0 192 158" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path opacity="0.18" d="M176.3 127.6C169.528 136.072 160.448 147.44 148.748 157.44C137.048 167.44 122.588 176.144 105.22 179.116C100.612 179.904 95.9398 180.268 91.2638 180.208C88.6238 180.176 44.7038 178.952 22.8638 144.636C10.3478 124.956 7.34783 103.756 23.3958 85.4962C31.1118 76.6962 40.4758 68.8762 44.8958 58.0562C46.7398 53.5482 47.6318 48.6922 49.5718 44.2202C54.1358 33.7402 64.1358 26.3202 74.9878 22.8682C85.8398 19.4162 97.5518 19.5282 108.876 20.8682C123.216 22.5642 138.74 27.1642 146.392 39.4082C151.252 47.1842 152.132 56.8722 156.628 64.8602C160.228 71.2322 165.916 76.1642 171.992 80.2242C176.924 83.5202 182.392 86.5682 185.32 91.7362C186.404 93.6522 187.14 95.7442 187.5 97.9162C189.256 108.44 182.408 119.96 176.3 127.6Z" fill="#692FDB"/>
 <path d="M148.751 157.44C136.995 167.48 122.591 176.144 105.223 179.116C106.519 168.952 110.623 150.288 110.623 150.288L143.611 144.536L148.751 157.44Z" fill="#473F47"/>
 <path d="M118.581 110.82C117.873 115.552 115.529 119.876 113.069 123.984C111.465 126.64 109.533 129.076 107.309 131.24C105.329 133.176 103.613 134.632 100.613 134.288C98.4653 134.04 96.4933 132.964 94.7893 131.632C93.3853 130.604 92.2413 129.264 91.4453 127.72C90.8413 126.432 90.6013 125.004 90.7573 123.592C91.2333 119.292 94.9253 116.336 96.7133 112.608C98.7693 108.324 98.8773 103.236 101.481 99.1077C104.217 94.7597 110.581 94.5117 114.401 97.7197C116.873 99.8037 118.233 102.872 118.637 106.12C118.833 107.68 118.813 109.264 118.581 110.82Z" fill="#692FDB"/>

@@ -72,10 +72,10 @@ export const Formsreg = ({}) => {
 export const Formslogempleado = () => {
   const [location, setLocation] = useLocation();
   return (
-    <form className="absolute w-[600px] flex flex-col top-[100px] left-[450px] gap-[40px] items-center ">
+    <form className="absolute w-[600px] flex flex-col top-[100px] left-[450px] gap-[40px] items-center 2xl:w-[350px] 2xl:left-[38%] 2xl:top-[40px] 2xl:gap-[20px]">
       <div className="flex flex-col items-center gap-[20px] ">
-        <h2 className="text-[#FE7A36] font-medium text-[50px] ">Login</h2>
-        <FaUserCircle className="text-[70px] text-[#FE7A36] " />
+        <h2 className="text-[#FE7A36] font-medium text-[50px] 2xl:text-[37px]">Login</h2>
+        <FaUserCircle className="text-[70px] text-[#FE7A36]  2xl:text-[60px] " />
       </div>
       <div className="flex flex-col items-center gap-[8px]">
         <label className="flex flex-col items-center justify-center gap-y-[20px] ">
@@ -103,10 +103,10 @@ export const Formslogempleado = () => {
 export const Formslogadmin = () => {
   const [location, setLocation] = useLocation();
   return (
-    <form className="absolute w-[600px] flex flex-col top-[100px] left-[450px] gap-[40px] items-center ">
+    <form className="absolute w-[600px] flex flex-col top-[100px] left-[450px] gap-[40px] items-center 2xl:w-[350px] 2xl:left-[38%] 2xl:top-[40px] 2xl:gap-[20px] ">
       <div className="flex flex-col items-center gap-[20px] ">
-        <h2 className="text-[#692FDB] font-medium text-[50px] ">Login</h2>
-        <FaUserCircle className="text-[70px] text-[#692FDB] " />
+        <h2 className="text-[#692FDB] font-medium text-[50px] 2xl:text-[37px]">Login</h2>
+        <FaUserCircle className="text-[70px] text-[#692FDB] 2xl:text-[60px]" />
       </div>
       <div className="flex flex-col items-center gap-[8px]">
         <label className="flex flex-col items-center justify-center gap-y-[20px] ">
