@@ -5,6 +5,10 @@ import { Route, Switch } from "wouter"
 import { AppContextProvider } from "./contexts/app.context"
 import { Home } from "./components/Pages/Home/Home"
 import { CreateUsers } from "./components/Pages/create/CreateUsers/CreateUsers"
+import { Asistence } from "./components/Pages/Asistence/Asistence"
+import { Registerlist } from "./components/Pages/Registerlist/Registerlist"
+
+
 
 
 
@@ -22,8 +26,14 @@ function App() {
           <Route path="/register">
             <Register />
           </Route>
+          <Route path="/registeredlist">
+            <Registerlist />
+          </Route>
           <Route path="/">
             <Home />
+          </Route>
+          <Route path="/asitencia">
+            <Asistence />
           </Route>
           <Route path="/createusers">
             <CreateUsers />

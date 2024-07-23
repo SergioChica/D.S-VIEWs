@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { Formsreg } from '../../shared/Forms/Forms'
+import { Formsreg } from '../../Shared/Forms/Forms'
 import { AppContext } from '../../../contexts/app.context'
 
 
