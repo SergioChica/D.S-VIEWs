@@ -1,10 +1,14 @@
 import React, { useContext } from 'react'
 import { Formsreg } from '../../shared/Forms/Forms'
-import { AppContext } from '../../../contexts/app.context'
+import { Modalverificate } from '../../Modals/registerverificate/modalverificate'
+import { StateContext } from '../../Context/Context'
+import { FaRegCheckCircle } from 'react-icons/fa'
+
 
 
 
 export const Register = () => {
+  const { modalverificate, setmodalverificate} = useContext(StateContext);
   return (
     <div className='w-full h-full flex flex-1 items-center relative'>
       <div className='w-[90px] h-[93px] bg-[#FE7A3659] rounded-[50%] bottom-[30%]  left-[6%] absolute ' />
@@ -96,6 +100,8 @@ export const Register = () => {
       <Formsreg />
       <div className='w-[80px] h-[83px] bg-[#FE7A3659] rounded-[50%] top-[5%]  right-[12%] absolute ' />
       <div className='w-[126px] h-[123px] bg-[#FF9F2E59] rounded-[50%] top-[20%]  right-[8%] absolute ' />
+      <Modalverificate visibility={modalverificate} IconAlert={FaRegCheckCircle} closeButton={() => setmodalverificate(false)} closeIcon={() => setmodalverificate(false)}  />
     </div>
+
   )
 }
