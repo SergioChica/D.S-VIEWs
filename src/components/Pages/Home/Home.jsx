@@ -185,13 +185,11 @@ export const Home = () => {
 </linearGradient>
 </defs>
 </svg>
+</div> 
+<div className='fixed z-1 top-[-320px] right-[-780px] w-[1600px] h-[1825px] rounded-[50%] bg-gradient-to-t from-[#381975]  to-[#692FDB] '>
 </div>
 
-   
-<div className='fixed z-1 top-[-320px] right-[-780px] w-[1600px] h-[1825px] rounded-[50%] bg-gradient-to-t from-[#381975]  to-[#692FDB] '></div>
-        
-
-
+<p className='text-[30px] text-[#F0ECE3] fixed right-[6rem] bottom-[2.5rem] w-[30rem] text-end'>En Data Sport optimizamos la gestión de centros deportivos sistematizando la información de clientes, empleados e inventarios. Facilitamos el control de mensualidades y asistencias mediante una solución tecnológica eficiente, mejorando la administración y operatividad de los establecimientos, ofreciendo siempre la máxima satisfacción a nuestros usuarios.</p>
 
   </>
   )
