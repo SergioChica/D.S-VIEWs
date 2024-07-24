@@ -16,16 +16,16 @@ export const Home = () => {
 <path d="M42.8906 41.8652C48.1445 41.8652 50.7715 39.6094 50.7715 35.0977C50.7715 30.3125 48.0273 27.1289 42.5391 25.5469C40.3125 24.8828 37.793 24.5312 34.9805 24.4922V18.9844C41.9336 18.9844 47.3828 20.6152 51.3281 23.877C54.8633 26.8262 56.6309 30.5664 56.6309 35.0977C56.6309 39.7266 54.6484 43.0469 50.6836 45.0586C49.1602 45.8398 47.2363 46.2891 44.9121 46.4062V50.0098H39.9316V41.748C40.7129 41.8262 41.6992 41.8652 42.8906 41.8652ZM38.584 57.1875C38.584 56.0547 38.9453 55.1855 39.668 54.5801C40.3906 53.9746 41.3086 53.6719 42.4219 53.6719C43.5352 53.6719 44.4629 53.9746 45.2051 54.5801C45.9473 55.1855 46.3184 56.0547 46.3184 57.1875C46.3184 58.3203 45.9473 59.1895 45.2051 59.7949C44.4629 60.4004 43.5352 60.7031 42.4219 60.7031C41.3086 60.7031 40.3906 60.4004 39.668 59.7949C38.9453 59.1895 38.584 58.3203 38.584 57.1875Z" fill="#692FDB"/>
 </svg></li>
 <li onClick={() => setLocation("/asitencia")}>
-  <p className=' text-[40px] cursor-pointer text-[#1E1E1E]  '>Asistencia</p>
+  <p className=' text-[40px] cursor-pointer text-[#1E1E1E]  hover:px-2 hover:bg-[#692FDB] hover:rounded-xl  hover:text-[#F0ECE3] '>Asistencia</p>
 </li>
 <li onClick={() => setLocation("/registeredlist")}>
-<p className=' text-[40px] cursor-pointer text-[#1E1E1E] '>Registros</p>
+<p className=' text-[40px] cursor-pointer text-[#1E1E1E]  hover:px-2 hover:bg-[#692FDB] hover:rounded-xl  hover:text-[#F0ECE3] '>Registros</p>
 </li>
 <li>
-<p className=' text-[40px] cursor-pointer text-[#F0ECE3]   '>Inventario</p>
+<p className=' text-[40px] cursor-pointer text-[#F0ECE3] hover:px-2 hover:bg-[#F0ECE3] hover:rounded-xl  hover:text-[#692FDB] '>Inventario</p>
 </li>
 <li>
-  <FaUserCircle className='text-[70px] text-[#F0ECE3]  cursor-pointer' />
+  <FaUserCircle className='text-[70px] text-[#F0ECE3] cursor-pointer' />
 </li>
   </ul>
 </div>

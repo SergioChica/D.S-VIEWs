@@ -12,7 +12,7 @@ export const Registerlist = () => {
 
     <div className='flex items-center justify-center   w-[80rem] h-full mt-[4rem]'>
 
-    <div onClick= {() => setLocation("/Register")} >
+    <div onClick= {() => setLocation("/")} >
 <IoMdArrowRoundBack className='cursor-pointer text-[40px] text-[#1E1E1E] fixed left-[15rem] top-[6rem]' />
 </div>
 
