@@ -15,7 +15,7 @@ import { Registerlist } from "./components/Pages/Registerlist/Registerlist"
 function App() {
   return (
     <AppContextProvider>
-      <div className="min-h-screen w-full flex flex-col ">
+      <div className="min-h-screen max-w-[1920px] mx-auto w-full flex flex-col ">
         <Switch>
           <Route path="/loginadmin">
             <LoginAdmin />
