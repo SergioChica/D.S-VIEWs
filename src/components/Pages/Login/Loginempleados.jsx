@@ -1,4 +1,4 @@
-import { Formslogempleado } from '../../shared/Forms/Forms'
+import { Formslogempleado } from '../../Shared/Forms/Forms'
 import { useLocation } from 'wouter'
 
 
@@ -7,9 +7,9 @@ export const LoginEmpleados = () => {
   return (
     <div className='w-full h-full flex flex-1 items-center relative'>
       <div>
-<svg className="w-[470px] h-[488px] absolute bottom-[28rem] 2xl:w-[350px] 2xl:h-[368px] 2xl:bottom-[25rem]" width="299" height="186" viewBox="0 0 299 186" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg className="w-[470px] h-[488px] absolute bottom-[28rem] 2xl:w-[350px] 2xl:h-[368px] 2xl:bottom-[25rem]" width="316" height="235" viewBox="0 0 299 186" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path className='cursor-pointer ' onClick={() => setLocation("/loginadmin")}
-            fill="url(#paint0_linear_425_3047)" transform="translate(0 32)">
+            fill="url(#paint0_linear_425_3047)"   >
             <animate attributeName='d' dur="18000ms" repeatCount="indefinite"
               values='
               M271.652 79.8754C243.997 118.056 202.28 136.164 159.661 149.564C117.041 162.964 73.5195 171.656 31.5637 157.005C-10.4796 142.104 -50.7328 103.785 -72.6151 54.3203C-94.4973 4.85576 -97.697 -55.58 -75.6893 -97.7183C-53.5941 -139.607 -6.51553 -163.124 34.9907 -159.733C76.1853 -156.516 111.496 -126.565 159.099 -107.955C207.014 -89.1712 266.996 -81.654 290.216 -49.0558C313.299 -16.1337 299.394 41.9443 271.652 79.8754Z;

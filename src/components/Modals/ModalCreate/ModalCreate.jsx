@@ -1,5 +1,4 @@
 import React from 'react'
-// import { IoClose } from "react-icons/io5"
 import { IoCloseOutline } from "react-icons/io5";
 
 export const ModalCreate = ({ text, closeIcon, closeButton, visibility }) => {

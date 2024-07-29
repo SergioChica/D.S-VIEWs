@@ -16,7 +16,7 @@ export const Buttonlog = ({Text, width}) => {
   )
 }
 
-export const Buttonlog2 = ({Text, width}) => {
+export const Buttonlog2 = ({onClick,Text, width}) => {
   return (
     <div >
     <button  onClick={() => onClick && onClick()} className={` w-[${width}] mb-[2rem] mt-[1rem] text-[30px]  text-white bg-gradient-to-r from-[#692FDB]  to-[#381975] px-[3rem] py-[0.5rem] rounded-[10px] shadow-md 2xl:text-[25px]`}>{Text}</button>
@@ -25,6 +25,13 @@ export const Buttonlog2 = ({Text, width}) => {
 }
 
 export const Buttonfilter = ({Text, width, customClassName }) => {
+  return (
+    <>
+    <button className={`${customClassName} w-[${width}] mb-[2rem] mt-[1rem] text-[30px] text-white px-[3rem] py-[0.5rem] rounded-[10px] shadow-md `}>{Text}</button>
+    </>
+  )
+}
+export const ButtomHome = ({Text, width, customClassName }) => {
   return (
     <>
     <button className={`${customClassName} w-[${width}] mb-[2rem] mt-[1rem] text-[30px] text-white px-[3rem] py-[0.5rem] rounded-[10px] shadow-md `}>{Text}</button>

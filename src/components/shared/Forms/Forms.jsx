@@ -1,14 +1,16 @@
-import React from "react";
+import React, {useContext} from "react";
 import {
   InputFormsreg,
   InputFormslog,
   InputFormslog2,
   Inputrecuerdame,
+  InputFormsUsers,
   Inputolvi,
 } from "../InputForms/InputForms";
 import { Buttonlog, Buttonlog2, ButtonUsers } from "../Button/Buttons";
 import { FaUserCircle } from "react-icons/fa";
 import { useLocation } from 'wouter'
+import { StateContext } from "../../Context/Context";
 
 export const FormsUsers = ({ }) => { 
 
@@ -34,8 +36,13 @@ export const FormsUsers = ({ }) => {
 }
 
 
-export const Formsreg = ({}) => {
+export const Formsreg = () => {
   const [location, setLocation] = useLocation();
+  const { setmodalverificate} = useContext(StateContext);
+
+  const viewModal = () => {
+    setmodalverificate(true)
+  }
   return (
     <form className="absolute w-[500px] flex flex-col top-[60px] right-[300px] gap-[40px] items-center ">
       <div className="flex flex-col items-center gap-[20px] ">
@@ -61,8 +68,8 @@ export const Formsreg = ({}) => {
             />
           </div>
         </div>
-        <div onClick= {() => setLocation("/")} >
-        <Buttonlog2 Text={"Contactanos"} width={"6rem"} />
+        <div >
+        <Buttonlog2 onClick={viewModal}  Text={"Contactanos"} width={"6rem"} />
         </div>
       </div>
     </form>

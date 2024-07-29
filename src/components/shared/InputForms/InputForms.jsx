@@ -1,6 +1,18 @@
 import React, { useState } from 'react'
 import { FaUserCircle } from "react-icons/fa";
+import { TbBackground } from 'react-icons/tb';
 
+export const InputFormsUsers = ({placeholder,type,ref}) => {
+  return (
+    <>
+    <div className='w-[272px] h-[64px]  p-1 rounded-[4px] bg-gradient-to-r from-[#FE7A36]  to-[#381975] '>
+      <div className=' w-full h-full bg-[#efeeee] flex items-center justify-center'>
+            <input type={type} required placeholder={placeholder} className='w-full h-full text-[#3f3d5657] placeholder-[#3f3d56] bg-[#F0ECE3B2] text-[18px] indent-[20px] rounded-[4px] ' ref={ref} />
+      </div>
+    </div>
+    </>
+  )
+}
 
 export const InputFormsreg = ({ placeholder }) => {
   return (
@@ -82,21 +94,23 @@ export const
   }
 
   
-  export const Perfilcontenedor = ({customClassName, nombre, documeto}) => {
+  export const Perfilcontenedor = ({ customClassName, nombre, documento, Background, icon }) => {
     return (
-      <>
-      <div className={`${customClassName} w-[30rem] h-[6rem] flex items-center justify-evenly cursor-pointer`}>
-        <div className=' w-[80%] flex-col'>
-          <div className='text-[22px]'>
-          {nombre}
-          </div>
-        {documeto}
+      
+      <div className={`${customClassName} w-[22rem] h-[5rem] flex items-center justify-evenly cursor-pointer`}>
+        <div className={`${Background} w-[18%] h-[5rem]`}>
+          
         </div>
-        <FaUserCircle className=" w-[20%] text-[60px] text-white  " />
+        
+        <div className='w-[65%] flex-col px-[10px] '>
+          <div className='text-[16px]'>
+            {nombre}
+          </div>
+          {documento}
+        </div>
+        <FaUserCircle className={`${icon} w-[17%] text-[40px] text-black flex justify-end`} />
       </div>
-      </>
-
-    )
+    );
   }
   
 
