@@ -1,6 +1,8 @@
 import React from "react";
 import { Navbar } from "../../shared/Navbar/Navbar";
 import { Usertype } from "../../shared/Figures/Figures";
+import { Datoscuriosos1 } from "../../Carrusel/Datoscuriosos/Datoscuriosos";
+
 
 export const Home = () => {
   return (
@@ -608,8 +610,8 @@ export const Home = () => {
 <path d="M166.798 57.8001C176.498 78.3001 167.398 106 153.198 122.9C138.898 139.8 119.498 146 102.298 144.6C85.0981 143.3 70.2981 134.5 57.0981 118.2C43.7981 101.9 32.1981 78.0001 39.6981 58.9001C47.0981 39.7001 73.5981 25.2001 100.998 24.6001C128.498 24.0001 156.998 37.3001 166.798 57.8001Z" fill="#BFA0F2"/>
 </svg>
 <div className="relative"> 
-  <p className="absolute w-[20rem] text-[20px] text-center right-[-10rem] bottom-[20rem] ">
-  Hacer ejercicio regularmente puede mejorar tu estado de ánimo y reducir los síntomas de ansiedad y depresión. Esto se debe a la liberación de endorfinas y otros químicos cerebrales que te hacen sentir bien.
+  <p className="absolute w-[20rem] text-[18px] text-center right-[-10rem] bottom-[20rem] ">
+    
   </p>
 </div>
 
