@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { Formsreg } from '../../Shared/Forms/Forms'
+import { Formsreg } from '../../shared/Forms/Forms'
 import { Modalverificate } from '../../Modals/registerverificate/modalverificate'
 import { StateContext } from '../../Context/Context'
 import { FaRegCheckCircle } from 'react-icons/fa'
