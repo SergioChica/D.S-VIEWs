@@ -1,8 +1,7 @@
 import React from "react";
-import { Navbar } from "../../shared/Navbar/Navbar";
-import { Usertype } from "../../shared/Figures/Figures";
-import { Datoscuriosos1 } from "../../Carrusel/Datoscuriosos/Datoscuriosos";
-
+import { Navbar } from "../../Shared/Navbar/Navbar";
+import { Usertype } from "../../Shared/Figures/Figures";
+import Carrusel from "../../Carrusel/Datoscuriosos/carrusel1";
 
 export const Home = () => {
   return (
@@ -25,7 +24,7 @@ export const Home = () => {
           </span>
           <span className="max-w-md z-10">
             <span>
-              <div className="relative right-[7rem]">
+              <div className="relative right-[0rem]">
                 <p className="max-w-[35rem] text-center text-[25px] text-[#1E1E1E]">
                   Hola, D.S (Data Sport) te da las gracias por confiar en
                   nuestros servicios
@@ -361,9 +360,14 @@ export const Home = () => {
                   y2="799"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop offset="0.1" stop-color="#F0ECE3" />
-                  <stop offset="0.5" stop-color="#692FDB" stop-opacity="0.7" />
-                  <stop offset="0.65" stop-color="#F0ECE3" />
+                  <stop offset="0.185" stop-color="#F0ECE3" />
+                  <stop offset="0.38" stop-color="#692FDB" stop-opacity="0.7" />
+                  <stop
+                    offset="0.53"
+                    stop-color="#692FDB"
+                    stop-opacity="0.75"
+                  />
+                  <stop offset="0.69" stop-color="#F0ECE3" />
                 </linearGradient>
               </defs>
             </svg>
@@ -372,7 +376,7 @@ export const Home = () => {
       </div>
       <div className="w-full h-[30rem] flex justify-evenly items-center ">
         <svg
-        className=" size-[40rem]"
+          className=" size-[40rem]"
           width="450"
           height="450"
           viewBox="0 0 450 450"
@@ -604,18 +608,31 @@ export const Home = () => {
             fill="#FE7A36"
           />
         </svg>
-          <div className="flex flex-col items-center justify-end ">
-        <h1 className="text-[60px] mb-[-3rem]">¡Datos curiosos!</h1>
-        <svg width="700" height="700" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M166.798 57.8001C176.498 78.3001 167.398 106 153.198 122.9C138.898 139.8 119.498 146 102.298 144.6C85.0981 143.3 70.2981 134.5 57.0981 118.2C43.7981 101.9 32.1981 78.0001 39.6981 58.9001C47.0981 39.7001 73.5981 25.2001 100.998 24.6001C128.498 24.0001 156.998 37.3001 166.798 57.8001Z" fill="#BFA0F2"/>
-</svg>
-<div className="relative"> 
-  <p className="absolute w-[20rem] text-[18px] text-center right-[-10rem] bottom-[20rem] ">
-    
-  </p>
-</div>
-
+        <div className="flex flex-col items-center justify-end ">
+          <h1 className="text-[60px] mb-[-3rem]">¡Datos curiosos!</h1>
+          <svg
+            width="700"
+            height="700"
+            viewBox="0 0 200 200"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path fill="#BFA0F2">
+              <animate
+                attributeName="d"
+                dur="20000ms"
+                repeatCount="indefinite"
+                values="
+                          M166.798 57.8001C176.498 78.3001 167.398 106 153.198 122.9C138.898 139.8 119.498 146 102.298 144.6C85.0981 143.3 70.2981 134.5 57.0981 118.2C43.7981 101.9 32.1981 78.0001 39.6981 58.9001C47.0981 39.7001 73.5981 25.2001 100.998 24.6001C128.498 24.0001 156.998 37.3001 166.798 57.8001Z;
+                     "
+              ></animate>
+            </path>
+          </svg>
+          <div className="relative cursor-pointer">
+            <p className="absolute w-[20rem] text-[20px] text-center right-[-11rem] bottom-[18rem] ">
+              <Carrusel />
+            </p>
           </div>
+        </div>
       </div>
     </div>
   );
