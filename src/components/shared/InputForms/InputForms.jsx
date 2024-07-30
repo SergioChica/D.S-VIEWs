@@ -108,7 +108,7 @@ export const
           </div>
           {documento}
         </div>
-        <FaUserCircle className={`${icon} w-[17%] text-[40px] text-black flex justify-end`} />
+        <FaUserCircle className={`w-[17%] text-[40px] text-[${icon}] flex justify-end`} />
       </div>
     );
   }

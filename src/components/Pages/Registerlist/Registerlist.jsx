@@ -15,12 +15,12 @@ export const Registerlist = () => {
 
     <div className='flex items-center justify-center w-[80rem] h-full mt-[3rem]'>
   <div onClick={() => setLocation("/")}>
-  <ButtomHome Text={'Regresar'} customClassName={'m-[0.5rem] text-[30px] absolute left-[12rem] top-[3%] text-black bg-[#F0ECE3] px-[1.5rem] py-[0.5rem] rounded-[10px] shadow-xl border-2 border-transparent transition-transform transform hover:-translate-y-2 hover:border-[#3B3A50] duration-1000'} />
+  <ButtomHome Text={'Regresar'} customClassName={'m-[0.5rem] text-[30px] absolute left-[12rem] top-[3%] text-[#000000] bg-[#F0ECE3] px-[1.5rem] py-[0.5rem] rounded-[10px] shadow-xl border-2 border-transparent transition-transform transform hover:-translate-y-2 hover:border-[#3B3A50] duration-3000'} />
   </div>
 
-  <Buttonfilter Text={'Horario'} customClassName={'m-[1rem] text-[30px] text-black bg-[#F0ECE3] px-[1.5rem] py-[0.5rem] rounded-[10px] shadow-xl border-2 border-transparent transition-transform transform hover:-translate-y-3 hover:border-[#3B3A50] duration-1000'} />
-  <Buttonfilter Text={'Categoria'} customClassName={'m-[1rem] text-[30px] text-black bg-[#F0ECE3] px-[1.5rem] py-[0.5rem] rounded-[10px] shadow-xl border-2 border-transparent transition-transform transform hover:-translate-y-3 hover:border-[#3B3A50] duration-1000'} />
-  <Buttonfilter Text={'Estado'} customClassName={'m-[1rem] text-[30px] text-black bg-[#F0ECE3] px-[1.5rem] py-[0.5rem] rounded-[10px] shadow-xl border-2 border-transparent transition-transform transform hover:-translate-y-3 hover:border-[#3B3A50] duration-1000'} />
+  <Buttonfilter Text={'Horario'} customClassName={'m-[1rem] text-[30px] text-[#000000] bg-[#F0ECE3] px-[1.5rem] py-[0.5rem] rounded-[10px] shadow-xl border-2 border-transparent transition-transform transform hover:-translate-y-3 hover:border-[#3B3A50] duration-3000'} />
+  <Buttonfilter Text={'Categoria'} customClassName={'m-[1rem] text-[30px] text-[#000000] bg-[#F0ECE3] px-[1.5rem] py-[0.5rem] rounded-[10px] shadow-xl border-2 border-transparent transition-transform transform hover:-translate-y-3 hover:border-[#3B3A50] duration-3000'} />
+  <Buttonfilter Text={'Estado'} customClassName={'m-[1rem] text-[30px] text-[#000000] bg-[#F0ECE3] px-[1.5rem] py-[0.5rem] rounded-[10px] shadow-xl border-2 border-transparent transition-transform transform hover:-translate-y-3 hover:border-[#3B3A50] duration-3000'} />
 </div>
 
     <h1 className='text-[3rem] mt-[20px]'>Usuarios Registrados</h1>
@@ -28,7 +28,7 @@ export const Registerlist = () => {
     <Perfilcontenedor
           nombre={'Jeronimo Arias Mosquera'}
           documento={'CC:1092456050'}
-          customClassName={'m-[1rem] text-[14px] text-black bg-[#F0ECE3] pr-[0.5rem] py-[0.5rem] rounded-[10px] shadow-md border-2 border-[#FE8D32]'}
+          customClassName={'m-[1rem] text-[14px] text-black bg-[#F0ECE3] pr-[0.5rem] py-[0.5rem] rounded-[10px] shadow-md border-2 border-[#FE8D32] transition-transform transform hover:-translate-y-2  duration-3000'}
           Background={'bg-gradient-to-t from-[#FF9F2E]  to-[#FE7A36] rounded-l-[10px]'}
           icon={'text-[#FE8D32]'}
         />
@@ -36,56 +36,56 @@ export const Registerlist = () => {
     <Perfilcontenedor
           nombre={'Jeronimo Arias Mosquera'}
           documento={'CC:1092456050'}
-          customClassName={'m-[1rem] text-[14px] text-black bg-[#F0ECE3] pr-[0.5rem] py-[0.5rem] rounded-[10px] shadow-md border-2 border-[#5023A7]'}
+          customClassName={'m-[1rem] text-[14px] text-black bg-[#F0ECE3] pr-[0.5rem] py-[0.5rem] rounded-[10px] shadow-md border-2 border-[#5023A7] transition-transform transform hover:-translate-y-2  duration-3000'}
           Background={'bg-gradient-to-t from-[#692FDB]  to-[#381975] rounded-l-[10px]'}
           icon={'text-[#5023A7]'}
         /> 
     <Perfilcontenedor
           nombre={'Jeronimo Arias Mosquera'}
           documento={'CC:1092456050'}
-          customClassName={'m-[1rem] text-[14px] text-black bg-[#F0ECE3] pr-[0.5rem] py-[0.5rem] rounded-[10px] shadow-md border-2 border-[#3F3D56]'}
+          customClassName={'m-[1rem] text-[14px] text-black bg-[#F0ECE3] pr-[0.5rem] py-[0.5rem] rounded-[10px] shadow-md border-2 border-[#3F3D56] transition-transform transform hover:-translate-y-2  duration-3000'}
           Background={'bg-gradient-to-t from-[#3F3D56]  to-[#3F3D56]  to-[#381975] rounded-l-[10px]'}
           icon={'text-[#3F3D56]'}
         />
    <Perfilcontenedor
           nombre={'Jeronimo Arias Mosquera'}
           documento={'CC:1092456050'}
-          customClassName={'m-[1rem] text-[14px] text-black bg-[#F0ECE3] pr-[0.5rem] py-[0.5rem] rounded-[10px] shadow-md border-2 border-[#5023A7]'}
+          customClassName={'m-[1rem] text-[14px] text-black bg-[#F0ECE3] pr-[0.5rem] py-[0.5rem] rounded-[10px] shadow-md border-2 border-[#5023A7] transition-transform transform hover:-translate-y-2  duration-3000'}
           Background={'bg-gradient-to-t from-[#692FDB]  to-[#381975] rounded-l-[10px]'}
           icon={'text-[#5023A7]'}
         /> 
      <Perfilcontenedor
           nombre={'Jeronimo Arias Mosquera'}
           documento={'CC:1092456050'}
-          customClassName={'m-[1rem] text-[14px] text-black bg-[#F0ECE3] pr-[0.5rem] py-[0.5rem] rounded-[10px] shadow-md border-2 border-[#3F3D56]'}
+          customClassName={'m-[1rem] text-[14px] text-black bg-[#F0ECE3] pr-[0.5rem] py-[0.5rem] rounded-[10px] shadow-md border-2 border-[#3F3D56] transition-transform transform hover:-translate-y-2  duration-3000'}
           Background={'bg-gradient-to-t from-[#3F3D56]  to-[#3F3D56]  to-[#381975] rounded-l-[10px]'}
           icon={'text-[#3F3D56]'}
         />
     <Perfilcontenedor
           nombre={'Jeronimo Arias Mosquera'}
           documento={'CC:1092456050'}
-          customClassName={'m-[1rem] text-[14px] text-black bg-[#F0ECE3] pr-[0.5rem] py-[0.5rem] rounded-[10px] shadow-md border-2 border-[#FE8D32]'}
+          customClassName={'m-[1rem] text-[14px] text-black bg-[#F0ECE3] pr-[0.5rem] py-[0.5rem] rounded-[10px] shadow-md border-2 border-[#FE8D32] transition-transform transform hover:-translate-y-2  duration-3000'}
           Background={'bg-gradient-to-t from-[#FF9F2E]  to-[#FE7A36] rounded-l-[10px]'}
           icon={'text-[#FE8D32]'}
         />
     <Perfilcontenedor
           nombre={'Jeronimo Arias Mosquera'}
           documento={'CC:1092456050'}
-          customClassName={'m-[1rem] text-[14px] text-black bg-[#F0ECE3] pr-[0.5rem] py-[0.5rem] rounded-[10px] shadow-md border-2 border-[#FE8D32]'}
+          customClassName={'m-[1rem] text-[14px] text-black bg-[#F0ECE3] pr-[0.5rem] py-[0.5rem] rounded-[10px] shadow-md border-2 border-[#FE8D32] transition-transform transform hover:-translate-y-2  duration-3000'}
           Background={'bg-gradient-to-t from-[#FF9F2E]  to-[#FE7A36] rounded-l-[10px]'}
           icon={'text-[#FE8D32]'}
         />
         <Perfilcontenedor
           nombre={'Jeronimo Arias Mosquera'}
           documento={'CC:1092456050'}
-          customClassName={'m-[1rem] text-[14px] text-black bg-[#F0ECE3] pr-[0.5rem] py-[0.5rem] rounded-[10px] shadow-md border-2 border-[#3F3D56]'}
+          customClassName={'m-[1rem] text-[14px] text-black bg-[#F0ECE3] pr-[0.5rem] py-[0.5rem] rounded-[10px] shadow-md border-2 border-[#3F3D56] transition-transform transform hover:-translate-y-2  duration-3000'}
           Background={'bg-gradient-to-t from-[#3F3D56]  to-[#3F3D56]  to-[#381975] rounded-l-[10px]'}
           icon={'text-[#3F3D56]'}
         />
         <Perfilcontenedor
           nombre={'Jeronimo Arias Mosquera'}
           documento={'CC:1092456050'}
-          customClassName={'m-[1rem] text-[14px] text-black bg-[#F0ECE3] pr-[0.5rem] py-[0.5rem] rounded-[10px] shadow-md border-2 border-[#FE8D32]'}
+          customClassName={'m-[1rem] text-[14px] text-black bg-[#F0ECE3] pr-[0.5rem] py-[0.5rem] rounded-[10px] shadow-md border-2 border-[#FE8D32] transition-transform transform hover:-translate-y-2  duration-3000'}
           Background={'bg-gradient-to-t from-[#FF9F2E]  to-[#FE7A36] rounded-l-[10px]'}
           icon={'text-[#FE8D32]'}
         />
@@ -93,56 +93,56 @@ export const Registerlist = () => {
     <Perfilcontenedor
           nombre={'Jeronimo Arias Mosquera'}
           documento={'CC:1092456050'}
-          customClassName={'m-[1rem] text-[14px] text-black bg-[#F0ECE3] pr-[0.5rem] py-[0.5rem] rounded-[10px] shadow-md border-2 border-[#5023A7]'}
+          customClassName={'m-[1rem] text-[14px] text-black bg-[#F0ECE3] pr-[0.5rem] py-[0.5rem] rounded-[10px] shadow-md border-2 border-[#5023A7] transition-transform transform hover:-translate-y-2  duration-3000'}
           Background={'bg-gradient-to-t from-[#692FDB]  to-[#381975] rounded-l-[10px]'}
           icon={'text-[#5023A7]'}
         /> 
     <Perfilcontenedor
           nombre={'Jeronimo Arias Mosquera'}
           documento={'CC:1092456050'}
-          customClassName={'m-[1rem] text-[14px] text-black bg-[#F0ECE3] pr-[0.5rem] py-[0.5rem] rounded-[10px] shadow-md border-2 border-[#3F3D56]'}
+          customClassName={'m-[1rem] text-[14px] text-black bg-[#F0ECE3] pr-[0.5rem] py-[0.5rem] rounded-[10px] shadow-md border-2 border-[#3F3D56] transition-transform transform hover:-translate-y-2  duration-3000'}
           Background={'bg-gradient-to-t from-[#3F3D56]  to-[#3F3D56]  to-[#381975] rounded-l-[10px]'}
           icon={'text-[#3F3D56]'}
         />
    <Perfilcontenedor
           nombre={'Jeronimo Arias Mosquera'}
           documento={'CC:1092456050'}
-          customClassName={'m-[1rem] text-[14px] text-black bg-[#F0ECE3] pr-[0.5rem] py-[0.5rem] rounded-[10px] shadow-md border-2 border-[#5023A7]'}
+          customClassName={'m-[1rem] text-[14px] text-black bg-[#F0ECE3] pr-[0.5rem] py-[0.5rem] rounded-[10px] shadow-md border-2 border-[#5023A7] transition-transform transform hover:-translate-y-2  duration-3000'}
           Background={'bg-gradient-to-t from-[#692FDB]  to-[#381975] rounded-l-[10px]'}
           icon={'text-[#5023A7]'}
         /> 
      <Perfilcontenedor
           nombre={'Jeronimo Arias Mosquera'}
           documento={'CC:1092456050'}
-          customClassName={'m-[1rem] text-[14px] text-black bg-[#F0ECE3] pr-[0.5rem] py-[0.5rem] rounded-[10px] shadow-md border-2 border-[#3F3D56]'}
+          customClassName={'m-[1rem] text-[14px] text-black bg-[#F0ECE3] pr-[0.5rem] py-[0.5rem] rounded-[10px] shadow-md border-2 border-[#3F3D56] transition-transform transform hover:-translate-y-2  duration-3000'}
           Background={'bg-gradient-to-t from-[#3F3D56]  to-[#3F3D56]  to-[#381975] rounded-l-[10px]'}
           icon={'text-[#3F3D56]'}
         />
     <Perfilcontenedor
           nombre={'Jeronimo Arias Mosquera'}
           documento={'CC:1092456050'}
-          customClassName={'m-[1rem] text-[14px] text-black bg-[#F0ECE3] pr-[0.5rem] py-[0.5rem] rounded-[10px] shadow-md border-2 border-[#FE8D32]'}
+          customClassName={'m-[1rem] text-[14px] text-black bg-[#F0ECE3] pr-[0.5rem] py-[0.5rem] rounded-[10px] shadow-md border-2 border-[#FE8D32] transition-transform transform hover:-translate-y-2  duration-3000'}
           Background={'bg-gradient-to-t from-[#FF9F2E]  to-[#FE7A36] rounded-l-[10px]'}
           icon={'text-[#FE8D32]'}
         />
     <Perfilcontenedor
           nombre={'Jeronimo Arias Mosquera'}
           documento={'CC:1092456050'}
-          customClassName={'m-[1rem] text-[14px] text-black bg-[#F0ECE3] pr-[0.5rem] py-[0.5rem] rounded-[10px] shadow-md border-2 border-[#FE8D32]'}
+          customClassName={'m-[1rem] text-[14px] text-black bg-[#F0ECE3] pr-[0.5rem] py-[0.5rem] rounded-[10px] shadow-md border-2 border-[#FE8D32] transition-transform transform hover:-translate-y-2  duration-3000'}
           Background={'bg-gradient-to-t from-[#FF9F2E]  to-[#FE7A36] rounded-l-[10px]'}
           icon={'text-[#FE8D32]'}
         />
         <Perfilcontenedor
           nombre={'Jeronimo Arias Mosquera'}
           documento={'CC:1092456050'}
-          customClassName={'m-[1rem] text-[14px] text-black bg-[#F0ECE3] pr-[0.5rem] py-[0.5rem] rounded-[10px] shadow-md border-2 border-[#3F3D56]'}
+          customClassName={'m-[1rem] text-[14px] text-black bg-[#F0ECE3] pr-[0.5rem] py-[0.5rem] rounded-[10px] shadow-md border-2 border-[#3F3D56] transition-transform transform hover:-translate-y-2  duration-3000'}
           Background={'bg-gradient-to-t from-[#3F3D56]  to-[#3F3D56]  to-[#381975] rounded-l-[10px]'}
           icon={'text-[#3F3D56]'}
         />
         <Perfilcontenedor
           nombre={'Jeronimo Arias Mosquera'}
           documento={'CC:1092456050'}
-          customClassName={'m-[1rem] text-[14px] text-black bg-[#F0ECE3] pr-[0.5rem] py-[0.5rem] rounded-[10px] shadow-md border-2 border-[#FE8D32]'}
+          customClassName={'m-[1rem] text-[14px] text-black bg-[#F0ECE3] pr-[0.5rem] py-[0.5rem] rounded-[10px] shadow-md border-2 border-[#FE8D32] transition-transform transform hover:-translate-y-2  duration-3000'}
           Background={'bg-gradient-to-t from-[#FF9F2E]  to-[#FE7A36] rounded-l-[10px]'}
           icon={'text-[#FE8D32]'}
         />
@@ -150,49 +150,49 @@ export const Registerlist = () => {
     <Perfilcontenedor
           nombre={'Jeronimo Arias Mosquera'}
           documento={'CC:1092456050'}
-          customClassName={'m-[1rem] text-[14px] text-black bg-[#F0ECE3] pr-[0.5rem] py-[0.5rem] rounded-[10px] shadow-md border-2 border-[#5023A7]'}
+          customClassName={'m-[1rem] text-[14px] text-black bg-[#F0ECE3] pr-[0.5rem] py-[0.5rem] rounded-[10px] shadow-md border-2 border-[#5023A7] transition-transform transform hover:-translate-y-2  duration-3000'}
           Background={'bg-gradient-to-t from-[#692FDB]  to-[#381975] rounded-l-[10px]'}
           icon={'text-[#5023A7]'}
         /> 
     <Perfilcontenedor
           nombre={'Jeronimo Arias Mosquera'}
           documento={'CC:1092456050'}
-          customClassName={'m-[1rem] text-[14px] text-black bg-[#F0ECE3] pr-[0.5rem] py-[0.5rem] rounded-[10px] shadow-md border-2 border-[#3F3D56]'}
+          customClassName={'m-[1rem] text-[14px] text-black bg-[#F0ECE3] pr-[0.5rem] py-[0.5rem] rounded-[10px] shadow-md border-2 border-[#3F3D56] transition-transform transform hover:-translate-y-2  duration-3000'}
           Background={'bg-gradient-to-t from-[#3F3D56]  to-[#3F3D56]  to-[#381975] rounded-l-[10px]'}
           icon={'text-[#3F3D56]'}
         />
    <Perfilcontenedor
           nombre={'Jeronimo Arias Mosquera'}
           documento={'CC:1092456050'}
-          customClassName={'m-[1rem] text-[14px] text-black bg-[#F0ECE3] pr-[0.5rem] py-[0.5rem] rounded-[10px] shadow-md border-2 border-[#5023A7]'}
+          customClassName={'m-[1rem] text-[14px] text-black bg-[#F0ECE3] pr-[0.5rem] py-[0.5rem] rounded-[10px] shadow-md border-2 border-[#5023A7] transition-transform transform hover:-translate-y-2  duration-3000'}
           Background={'bg-gradient-to-t from-[#692FDB]  to-[#381975] rounded-l-[10px]'}
           icon={'text-[#5023A7]'}
         /> 
      <Perfilcontenedor
           nombre={'Jeronimo Arias Mosquera'}
           documento={'CC:1092456050'}
-          customClassName={'m-[1rem] text-[14px] text-black bg-[#F0ECE3] pr-[0.5rem] py-[0.5rem] rounded-[10px] shadow-md border-2 border-[#3F3D56]'}
+          customClassName={'m-[1rem] text-[14px] text-black bg-[#F0ECE3] pr-[0.5rem] py-[0.5rem] rounded-[10px] shadow-md border-2 border-[#3F3D56] transition-transform transform hover:-translate-y-2  duration-3000'}
           Background={'bg-gradient-to-t from-[#3F3D56]  to-[#3F3D56]  to-[#381975] rounded-l-[10px]'}
           icon={'text-[#3F3D56]'}
         />
     <Perfilcontenedor
           nombre={'Jeronimo Arias Mosquera'}
           documento={'CC:1092456050'}
-          customClassName={'m-[1rem] text-[14px] text-black bg-[#F0ECE3] pr-[0.5rem] py-[0.5rem] rounded-[10px] shadow-md border-2 border-[#FE8D32]'}
+          customClassName={'m-[1rem] text-[14px] text-black bg-[#F0ECE3] pr-[0.5rem] py-[0.5rem] rounded-[10px] shadow-md border-2 border-[#FE8D32] transition-transform transform hover:-translate-y-2  duration-3000'}
           Background={'bg-gradient-to-t from-[#FF9F2E]  to-[#FE7A36] rounded-l-[10px]'}
           icon={'text-[#FE8D32]'}
         />
     <Perfilcontenedor
           nombre={'Jeronimo Arias Mosquera'}
           documento={'CC:1092456050'}
-          customClassName={'m-[1rem] text-[14px] text-black bg-[#F0ECE3] pr-[0.5rem] py-[0.5rem] rounded-[10px] shadow-md border-2 border-[#FE8D32]'}
+          customClassName={'m-[1rem] text-[14px] text-black bg-[#F0ECE3] pr-[0.5rem] py-[0.5rem] rounded-[10px] shadow-md border-2 border-[#FE8D32] transition-transform transform hover:-translate-y-2  duration-3000'}
           Background={'bg-gradient-to-t from-[#FF9F2E]  to-[#FE7A36] rounded-l-[10px]'}
           icon={'text-[#FE8D32]'}
         />
         <Perfilcontenedor
           nombre={'Jeronimo Arias Mosquera'}
           documento={'CC:1092456050'}
-          customClassName={'m-[1rem] text-[14px] text-black bg-[#F0ECE3] pr-[0.5rem] py-[0.5rem] rounded-[10px] shadow-md border-2 border-[#3F3D56]'}
+          customClassName={'m-[1rem] text-[14px] text-black bg-[#F0ECE3] pr-[0.5rem] py-[0.5rem] rounded-[10px] shadow-md border-2 border-[#3F3D56] transition-transform transform hover:-translate-y-2  duration-3000'}
           Background={'bg-gradient-to-t from-[#3F3D56]  to-[#3F3D56]  to-[#381975] rounded-l-[10px]'}
           icon={'text-[#3F3D56]'}
         />
