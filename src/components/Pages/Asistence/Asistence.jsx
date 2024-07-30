@@ -1,5 +1,5 @@
 import React from 'react'
-import { Perfilcontenedor } from '../../Shared/InputForms/InputForms';
+import { Perfilcontenedor } from '../../shared/InputForms/InputForms';
 import { useLocation } from 'wouter'
 import { IoMdArrowRoundBack } from "react-icons/io";
 
