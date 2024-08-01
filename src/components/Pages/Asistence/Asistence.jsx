@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import { ButtomHome } from '../../Shared/Button/Buttons';
 import { Perfilcontenedor } from '../../Shared/InputForms/InputForms';
 import { useLocation } from 'wouter';
-
+import asistence from '../../../assets/asistence.png'
 export const Asistence = () => {
   const [location, setLocation] = useLocation();
   const [asistencia, setAsistencia] = useState([]);
   const [inputValue, setInputValue] = useState('');
 
-  // Datos simulados con estado
+  
   const datosSimulados = [
     { nombre: 'Jeronimo Arias Mosquera', documento: '1092456050', estado: 'activo' },
     { nombre: 'María Fernanda Gómez', documento: '1234567890', estado: 'pendiente' },
@@ -99,7 +99,7 @@ export const Asistence = () => {
       <h1 className='text-[3rem] m-[4rem]'>Asistencia del día</h1>
       
       {asistencia.length === 0 ? (
-        <img src="path_to_your_image" alt="No hay asistencia" />
+        <img className='w-[300px] h-[300px]'src={asistence } alt="No hay asistencia" />
       ) : (
         <div className='h-full w-[80%] flex flex-wrap justify-evenly'>
   {asistencia.map((asistente, index) => {

@@ -97,7 +97,7 @@ export const
   export const Perfilcontenedor = ({ customClassName, nombre, documento, Background, icon }) => {
     return (
       
-      <div className={`${customClassName} w-[22rem] h-[5rem] flex items-center justify-evenly cursor-pointer`}>
+      <div className={`${customClassName} w-[22rem] h-[5rem] flex items-center justify-evenly cursor-pointer xl:w-[20rem]`}>
         <div className={`${Background} w-[18%] h-[5rem]`}>
           
         </div>

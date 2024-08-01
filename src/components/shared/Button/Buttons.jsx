@@ -27,14 +27,14 @@ export const Buttonlog2 = ({onClick,Text, width}) => {
 export const Buttonfilter = ({Text, width, customClassName }) => {
   return (
     <>
-    <button className={`${customClassName} w-[${width}] mb-[2rem] mt-[1rem] text-[30px] text-white px-[3rem] py-[0.5rem] rounded-[10px] shadow-md `}>{Text}</button>
+    <button className={`${customClassName} w-[${width}] mb-[2rem] mt-[1rem] text-[30px] px-[3rem] py-[0.5rem] rounded-[10px] shadow-md `}>{Text}</button>
     </>
   )
 }
 export const ButtomHome = ({Text, width, customClassName }) => {
   return (
     <>
-    <button className={`${customClassName} w-[${width}] mb-[2rem] mt-[1rem] text-[30px] text-white px-[3rem] py-[0.5rem] rounded-[10px] shadow-md `}>{Text}</button>
+    <button className={`${customClassName} w-[${width}] mb-[2rem] mt-[1rem] text-[30px]  px-[3rem] py-[0.5rem] rounded-[10px] shadow-md `}>{Text}</button>
     </>
   )
 }
