@@ -1,19 +1,13 @@
 import React, { useEffect, useState } from "react";
-import {
-  Datoscuriosos1,
-  Datoscuriosos2,
-  Datoscuriosos3,
-  Datoscuriosos4,
-  Datoscuriosos5,
-} from "./Datoscuriosos";
+import { Principalcarrusel1, Principalcarrusel2, Principalcarrusel3, Principalcarrusel4 } from "./Principalcarrusel";
 
-function Carrusel() {
+
+function Principalcarrusel() {
   const slides = [
-    <Datoscuriosos1 key="1" />,
-    <Datoscuriosos2 key="2" />,
-    <Datoscuriosos3 key="3" />,
-    <Datoscuriosos4 key="4" />,
-    <Datoscuriosos5 key="5" />,
+    <Principalcarrusel1 key="1" />,
+    <Principalcarrusel2 key="2" />,
+    <Principalcarrusel3 key="3" />,
+    <Principalcarrusel4 key="4" />,
   ];
 
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -30,7 +24,7 @@ function Carrusel() {
 
   useEffect(() => {
     if (!isHovered) {
-      const interval = setInterval(nextSlide, 5000);
+      const interval = setInterval(nextSlide, 4000);
       return () => clearInterval(interval);
     }
   }, [isHovered]);
@@ -48,19 +42,8 @@ function Carrusel() {
       >
         {slides[selectedIndex]}
       </div>
-      <div className="absolute bottom-[-2rem] left-1/2 transform -translate-x-1/2 flex gap-2">
-        {slides.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => setSelectedIndex(index)}
-            className={`w-3 h-3 rounded-full ${
-              index === selectedIndex ? "bg-[#F0ECE3]" : "bg-[#3F3D56]"
-            }`}
-          />
-        ))}
-      </div>
     </div>
   );
 }
 
-export default Carrusel;
+export default Principalcarrusel;

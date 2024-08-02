@@ -1,6 +1,6 @@
 import React from 'react'
-import { Buttonfilter } from '../../shared/Button/Buttons'
-import { Perfilcontenedor } from '../../shared/InputForms/InputForms';
+import { Buttonfilter } from '../../Shared/Button/Buttons'
+import { Perfilcontenedor } from '../../Shared/InputForms/InputForms';
 import { useLocation } from 'wouter'
 import { IoMdArrowRoundBack } from "react-icons/io";
 

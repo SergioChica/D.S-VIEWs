@@ -1,8 +1,9 @@
 import React from "react";
-import { Navbar } from "../../shared/Navbar/Navbar";
-import { Usertype } from "../../shared/Figures/Figures";
+import { Navbar } from "../../Shared/Navbar/Navbar";
+import { Usertype } from "../../Shared/Figures/Figures";
 import Carrusel from "../../Carrusel/Datoscuriosos/carrusel1";
-import { Principalcarrusel1 } from "../../Carrusel/Principalcarrusel/Principalcarrusel";
+import { Footer } from "../../Footer/Footer";
+import Principalcarrusel from "../../Carrusel/Principalcarrusel/carrusel0";
 
 
 export const Home = () => {
@@ -376,7 +377,7 @@ export const Home = () => {
           </span>
         </section>
       </div>
-      <div className="w-full h-[18rem] flex justify-evenly items-center ">
+      <div className="w-full h-[18rem] flex justify-evenly items-center  ">
         <svg
           className=" size-[40rem]"
           width="450"
@@ -637,8 +638,12 @@ export const Home = () => {
         </div>
       </div>
 
-        <div className=" w-full  h-[35rem] ">
-          <Principalcarrusel1 />
+        <div className=" w-full m-0 h-[35rem] flex items-center justify-center cursor-pointer ">
+          <Principalcarrusel />          
+        </div>
+
+        <div className="w-full ">
+          <Footer />
         </div>
 
     </div>

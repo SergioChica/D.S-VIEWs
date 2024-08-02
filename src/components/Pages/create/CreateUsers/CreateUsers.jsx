@@ -1,5 +1,5 @@
 import React, {useContext} from 'react'
-import { FormsUsers } from '../../../shared/Forms/Forms'
+import { FormsUsers } from '../../../Shared/Forms/Forms'
 import { ModalCreate } from '../../../Modals/ModalCreate/ModalCreate'
 import { StateContext } from '../../../Context/Context'
 import { FaRegCheckCircle } from 'react-icons/fa'
@@ -200,3 +200,4 @@ export const CreateUsers = () => {
         </div>
     )
 }
+ 

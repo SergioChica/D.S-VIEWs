@@ -32,3 +32,13 @@ export const Buttonfilter = ({Text, width, customClassName }) => {
   )
 }
 
+
+export const Buttonhome = ({Text,customClassName}) => {
+  return (
+    <div>
+      <button className={`${customClassName} w-[20rem] text-[30px] rounded-[20px] py-[0.5rem]`}>{Text}</button>
+    </div>
+  )
+}
+
+
