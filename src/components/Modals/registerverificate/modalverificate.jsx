@@ -34,7 +34,7 @@ export const Modalverificate = ({ closeIcon, closeButton, visibility }) => {
 </defs>
 </svg>
 
-<p className='fixed top-[15rem] w-[15rem] text-[#F0ECE3] text-center text-[25px]'>ya nos comunicaremos contigo gracias por confiar en nuestros servicios</p>
+<p className='text-[20px] text-[#F0ECE3] '> <b className='text-[35px] w-[15rem] fixed top-[13rem] left-[40rem] text-center'>Ya nos comunicaremos contigo</b> <p className=' w-[15rem] fixed top-[23rem] text-center left-[40rem] text-[#c2c1c0]'>gracias por confiar en nuestros servicios.</p></p>
 
 
 
