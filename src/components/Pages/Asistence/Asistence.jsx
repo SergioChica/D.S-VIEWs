@@ -81,7 +81,7 @@ export const Asistence = () => {
         </div>
       </div>
       <div className="flex flex-col items-center justify-evenly ">
-        <div className="flex  justify-evenly w-full ml-[85%]"> {/* Asegúrate de que el contenedor sea de ancho completo */}
+        <div className="flex  justify-evenly w-full "> {/* Asegúrate de que el contenedor sea de ancho completo */}
           <Buscador
             value={inputValue}
             onChange={handleInputChange}
@@ -89,7 +89,7 @@ export const Asistence = () => {
         </div>
         {possibleMatch && (
           <div
-            className='bg-white border border-gray-300 rounded-b-md shadow- p-2 max-w-max  cursor-pointer w-full text-center ' // Añadido w-full y text-center
+            className='bg-white border border-gray-300 rounded-b-md shadow- p-2 max-w-max  cursor-pointer w-full text-center relative' // Añadido w-full y text-center
             onClick={() => verificarDocumento(possibleMatch.document)}
           >
             <p>¿Buscabas a {possibleMatch.name}?</p>

@@ -28,10 +28,10 @@ const TableComponent = ({ users }) => {
               onMouseLeave={() => setHoveredIndex(null)}
             >
               <div
-                className={`w-4 h-8 rounded-[20px] mx-auto ${statusColors[user.status]} transition-all duration-200`}
+                className={`w-3 h-9 rounded-[20px] mx-auto ${statusColors[user.status]} transition-all duration-200`}
                 style={{
-                  width: hoveredIndex === index ? '120px' : '18px',
-                  height: '28px'
+                  width: hoveredIndex === index ? '120px' : '14px',
+                  height: '36px'
                 }}
                 title={user.status}
               >

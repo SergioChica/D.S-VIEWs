@@ -11,8 +11,8 @@ export const statusColors = {
       borderColor: statusColors[estado]
     };
   };
-
   import React from 'react';
+
   const StatusCard = () => {
     const items = [
       { id: 1, text: "Activo", color: "border-yellow-600", textColor: "text-white", bg: "bg-[#FE8D32]" },
@@ -23,17 +23,19 @@ export const statusColors = {
     return (
       <div className="w-[68%] flex ml-[10%] justify-start mb-10">
         <div className='flex items-center gap-4'>
-          <h3 className='text-lg text-black whitespace-nowrap'>Tipos de Estado:</h3>
-          <div className="flex gap-2">
+          <h3 className='text-xl text-black whitespace-nowrap'>Tipos de Estado:</h3>
+          <div className="flex gap-1">
             {items.map((item) => (
-              <p
-                key={item.id}
-                className={`h-16 w-8 overflow-hidden rounded-md transition-all duration-700 ease-in-out border ${item.color} ${item.bg} flex justify-center items-center hover:w-32 group`}
-              >
-                <span className={`p-2 text-center uppercase ${item.textColor} tracking-wider opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-in-out whitespace-nowrap`}>
+              <div key={item.id} className="relative group">
+                <div className={`h-8 w-3 rounded-md border ${item.color} ${item.bg} cursor-pointer`} />
+                <div className={`absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-4 py-2 ${item.bg} ${item.textColor} text-sm rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 whitespace-nowrap
+                  after:content-[''] after:absolute after:top-full after:left-1/2 after:-translate-x-1/2 
+                  after:border-8 after:border-t-current after:border-r-transparent after:border-b-transparent after:border-l-transparent
+                  after:border-t-black`}
+                >
                   {item.text}
-                </span>
-              </p>
+                </div>
+              </div>
             ))}
           </div>
         </div>

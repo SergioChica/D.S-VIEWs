@@ -7,7 +7,7 @@ import Buscador from '../../Shared/InputForms/InputForms';
 import StatusDropdown from '../../Shared/DropDowns/StatusFilter';
 import RegisterDropdown from '../../Shared/DropDowns/RegisterDropDown/RegisterDropDown';
 import StatusCard from '../../Shared/utils/utils';
-
+import SearchVector from '../../../assets/Searching.png'
 export const Registerlist = () => {
   const [, setLocation] = useLocation();
   const [searchTerm, setSearchTerm] = useState('');
@@ -54,7 +54,7 @@ export const Registerlist = () => {
 
   return (
     <div className='bg-[#F0ECE3] w-full h-full flex flex-col flex-1 items-center relative py-[2.5%]'>
-      <div className='absolute left-[5%] py-3' onClick={() => setLocation("/")}>
+      <div className='absolute left-[5%] py-[1.1rem]' onClick={() => setLocation("/")}>
         <ButtomHome customClassName={''} />
         <IoMdArrowRoundBack className="hidden sm:inline-block sm:text-[3rem] sm:top-[1%] text-[#000000] bg-[#F0ECE3] p-[0.5rem] rounded-[10px] shadow-xl border-2 border-transparent" />
       </div>
@@ -63,7 +63,10 @@ export const Registerlist = () => {
         <StatusDropdown onStatusChange={handleStatusChange} />
         <RegisterDropdown />
       </label>
-      <h1 className='text-[2rem] my-[5rem] 2xl:text-[2rem] xl:text-[1.5rem] lg:text-[1.7rem]'>Usuarios Registrados</h1>
+      <div className='w-[50%] flex h-[14rem] border border-[#3F3D56] m-6 rounded-md items-center shadow-xl'>
+      <img src={SearchVector} alt="SearchingVector" className='w-[200px] p-1'/>
+      <p className='text-center m-[0.5rem] '>Aquí, podrás encontrar todos los usuarios registrados del establecimiento. Además, tendrás la opción de registrar nuevos usuarios de manera sencilla y rápida. ¡Explora y gestiona tu lista de usuarios con facilidad!</p>
+      </div>
       <StatusCard/>
       <div className='m-2 h-full w-[90%] flex flex-wrap justify-center items-center mb-[15px] lg:w-[92%]'>
         {filteredUsers.length > 0 ? (
