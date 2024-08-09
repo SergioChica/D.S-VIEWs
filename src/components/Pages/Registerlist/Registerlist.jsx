@@ -2,10 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { useLocation } from 'wouter';
 import { IoMdArrowRoundBack } from 'react-icons/io';
 import { ButtomHome } from '../../Shared/Button/Buttons';
-import TableComponent from '../../Shared/userTable/userTable';
+import TableComponent from '../../Shared/userTable/registerTable';
 import Buscador from '../../Shared/InputForms/InputForms';
 import StatusDropdown from '../../Shared/DropDowns/StatusFilter';
 import RegisterDropdown from '../../Shared/DropDowns/RegisterDropDown/RegisterDropDown';
+import StatusCard from '../../Shared/utils/utils';
 
 export const Registerlist = () => {
   const [, setLocation] = useLocation();
@@ -62,7 +63,8 @@ export const Registerlist = () => {
         <StatusDropdown onStatusChange={handleStatusChange} />
         <RegisterDropdown />
       </label>
-      <h1 className='text-[2rem] mt-[5rem] 2xl:text-[2rem] xl:text-[1.5rem] lg:text-[1.7rem]'>Usuarios Registrados</h1>
+      <h1 className='text-[2rem] my-[5rem] 2xl:text-[2rem] xl:text-[1.5rem] lg:text-[1.7rem]'>Usuarios Registrados</h1>
+      <StatusCard/>
       <div className='m-2 h-full w-[90%] flex flex-wrap justify-center items-center mb-[15px] lg:w-[92%]'>
         {filteredUsers.length > 0 ? (
           <TableComponent users={filteredUsers} />

@@ -116,12 +116,12 @@ export const
 
 const Buscador = ({ onChange, value }) => {
   return (
-    <div className="relative">
+    <div className="relative ">
       <input
         placeholder="Buscar con documento"
-        className="input shadow-lg border-2 border-[#000000] hover:border-2 hover:border-[#000000] px-5 py-3 rounded-xl w-[20rem] transition-all outline-none"
+        className="input shadow-lg border-2 border-[#000000] hover:border-2 hover:border-[#000000] px-5 py-[0.8rem] rounded-xl w-[25rem] transition-all outline-none appearance-none"
         name="search"
-        type="search"
+        
         value={value}
         onChange={(e) => onChange(e.target.value)}
       />

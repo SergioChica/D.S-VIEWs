@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import { useLocation } from 'wouter';
 
 const statusColors = {
-  'Activo': 'bg-[#FE8D32]',
-  'Inactivo': 'bg-[#5023A7]',
-  'Pendiente': 'bg-[#3F3D56]'
+  'activo': 'bg-[#FE8D32]',
+  'pendiente': 'bg-[#5023A7]',
+  'inactivo': 'bg-[#3F3D56]'
 };
 
-const TableComponent = ({ users }) => {
+const AsistenceTable = ({ users }) => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const [, setLocation] = useLocation();
 
@@ -22,13 +22,17 @@ const TableComponent = ({ users }) => {
       <div className="border-t border-black">
         {users.map((user, index) => (
           <div key={index} className="flex justify-between py-4 border-b border-gray-400">
-            <div 
+            <div
               className="flex-1 text-center relative"
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
             >
               <div
-                className={`w-4 h-8 rounded-[20px] mx-auto ${statusColors[user.status]} transition-all duration-300 ${hoveredIndex === index ? 'w-20 h-8' : ''}`}
+                className={`w-4 h-8 rounded-[20px] mx-auto ${statusColors[user.status]} transition-all duration-200`}
+                style={{
+                  width: hoveredIndex === index ? '120px' : '18px',
+                  height: '28px'
+                }}
                 title={user.status}
               >
                 {hoveredIndex === index && (
@@ -36,7 +40,7 @@ const TableComponent = ({ users }) => {
                     className="absolute inset-0 flex items-center justify-center text-white text-xs font-bold"
                     onClick={() => setLocation(`/perfil/${user.document}`)}
                   >
-                    Ver más
+                    Ver mas
                   </button>
                 )}
               </div>
@@ -51,4 +55,4 @@ const TableComponent = ({ users }) => {
   );
 };
 
-export default TableComponent;
+export default AsistenceTable;

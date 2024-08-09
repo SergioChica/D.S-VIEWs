@@ -1,123 +1,120 @@
 import React, { useState } from 'react';
 import { ButtomHome } from '../../Shared/Button/Buttons';
-import { Perfilcontenedor } from '../../Shared/InputForms/InputForms';
 import { useLocation } from 'wouter';
-import asistence from '../../../assets/asistence.png'
+import asistence from '../../../assets/asistence.png';
+import AsistenceTable from '../../Shared/userTable/asistenceTable';
+import Buscador from '../../Shared/InputForms/InputForms';
+import AsistenceCarrusel from '../../Carrusel/AsistenceCarrusel/carrusel2';
+import StatusCard from '../../Shared/utils/utils';
+
 export const Asistence = () => {
   const [location, setLocation] = useLocation();
   const [asistencia, setAsistencia] = useState([]);
   const [inputValue, setInputValue] = useState('');
+  const [showTable, setShowTable] = useState(false);
+  const [possibleMatch, setPossibleMatch] = useState(null);
 
-  
+  const statusColors = {
+    'activo': 'bg-[#FE8D32]',
+    'pendiente': 'bg-[#5023A7]',
+    'inactivo': 'bg-[#3F3D56]'
+  };
+
   const datosSimulados = [
-    { nombre: 'Jeronimo Arias Mosquera', documento: '1092456050', estado: 'activo' },
-    { nombre: 'María Fernanda Gómez', documento: '1234567890', estado: 'pendiente' },
-    { nombre: 'Carlos Eduardo Perez', documento: '9876543210', estado: 'inactivo' },
-    { nombre: 'Ana Lucía Ramírez', documento: '1122334455', estado: 'activo' },
-    { nombre: 'Juan David Torres', documento: '2233445566', estado: 'pendiente' },
-    { nombre: 'Luisa Fernanda Ortiz', documento: '3344556677', estado: 'inactivo' },
-    { nombre: 'Mateo Hernández', documento: '4455667788', estado: 'activo' },
-    { nombre: 'Valentina López', documento: '5566778899', estado: 'pendiente' }
+    { status: 'activo', document: '1092456050', name: 'Jeronimo Arias Mosquera', phone: '555-1234' },
+    { status: 'pendiente', document: '1234567890', name: 'María Fernanda Gómez', phone: '555-5678' },
+    { status: 'inactivo', document: '9876543210', name: 'Carlos Eduardo Perez', phone: '+56 9 8765 4321' },
+    { status: 'activo', document: '1122334455', name: 'Ana Lucía Ramírez', phone: '+52 1 2345 6789' },
+    { status: 'pendiente', document: '2233445566', name: 'Juan David Torres', phone: '+34 912 345 678' },
+    { status: 'inactivo', document: '3344556677', name: 'Luisa Fernanda Ortiz', phone: '+55 11 9876 5432' },
+    { status: 'activo', document: '4455667788', name: 'Mateo Hernández', phone: '+44 20 7946 0958' },
+    { status: 'pendiente', document: '5566778899', name: 'Valentina López', phone: '555-1234' },
   ];
 
   const verificarDocumento = (documento) => {
-  
-    const datosEncontrados = datosSimulados.find(dato => dato.documento === documento);
+    const datosEncontrados = datosSimulados.find(dato => dato.document === documento);
     if (datosEncontrados) {
-     
-      if (!asistencia.some(a => a.documento === datosEncontrados.documento)) {
+      if (!asistencia.some(a => a.document === datosEncontrados.document)) {
         setAsistencia([...asistencia, datosEncontrados]);
+        setShowTable(true);
       }
     } else {
-      
+      // Mostrar mensaje de error o alguna indicación visual
     }
   };
 
-  const handleInputChange = (e) => {
-    setInputValue(e.target.value);
+  const handleInputChange = (value) => {
+    setInputValue(value);
+    if (value.trim() === '') {
+      setPossibleMatch(null);
+    } else {
+      const possibleMatch = datosSimulados.find(dato =>
+        dato.document.includes(value)
+      );
+      setPossibleMatch(possibleMatch);
+    }
   };
 
-  const handleKeyPress = (e) => {
-    if (e.key === 'Enter') {
-      verificarDocumento(inputValue);
+  const handleRegisterAttendance = () => {
+    if (possibleMatch) {
+      verificarDocumento(possibleMatch.document);
       setInputValue('');
+      setPossibleMatch(null);
     }
   };
 
   const getStyleByEstado = (estado) => {
-    switch (estado) {
-      case 'activo':
-        return {
-          Background: 'bg-gradient-to-t from-[#FF9F2E] to-[#FE7A36] rounded-l-[10px]',
-          icon: '#FE8D32',
-          borderColor: 'border-[#FE8D32]'
-        };
-      case 'pendiente':
-        return {
-          Background: 'bg-gradient-to-t from-[#692FDB] to-[#381975] rounded-l-[10px]',
-          icon: '#5023A7',
-          borderColor: 'border-[#5023A7]'
-        };
-      case 'inactivo':
-        return {
-          Background: 'bg-gradient-to-t from-[#3F3D56] to-[#3F3D56] rounded-l-[10px]',
-          icon: '#3F3D56',
-          borderColor: 'border-[#3F3D56]'
-        };
-      default:
-        return {
-          Background: 'bg-gray-200',
-          icon: 'text-gray-400',
-          borderColor: 'border-gray-400'
-        };
-    }
+    return {
+      Background: statusColors[estado],
+      icon: statusColors[estado],
+      borderColor: statusColors[estado]
+    };
   };
-  
 
   return (
     <div className='bg-[#F0ECE3] w-full h-full flex flex-col flex-1 items-center relative'>
       <div className='flex items-center justify-center w-full h-full mt-[4rem]'>
-        <div onClick={() => setLocation("/")}>
-          <ButtomHome 
-            Text={'Regresar'} 
-            customClassName={'m-[1rem] text-[30px] text-[#000000] absolute left-[12rem] top-[4.5%] bg-[#F0ECE3] px-[1.5rem] py-[0.5rem] rounded-[10px] shadow-xl border-2 border-transparent transition-transform transform hover:-translate-y-2 hover:border-[#3B3A50] duration-3000'} 
+        <div className='absolute left-[20%] top-[6.9%]' onClick={() => setLocation("/")}>
+          <ButtomHome
+            Text={'Regresar'}
           />
         </div>
       </div>
-      
-      <label className="flex flex-col items-center justify-center">
-        <input 
-          className='w-[37rem] h-[3rem] bg-white text-[25px] placeholder-[#3F3D56] px-5 border-[3px] border-[#3F3D56] rounded-[10px]' 
-          type="text" 
-          placeholder='Ingresa tu documento...' 
-          value={inputValue}
-          onChange={handleInputChange}
-          onKeyPress={handleKeyPress}
-        />
-      </label>
-      
-      <h1 className='text-[3rem] m-[4rem]'>Asistencia del día</h1>
-      
-      {asistencia.length === 0 ? (
-        <img className='w-[300px] h-[300px]'src={asistence } alt="No hay asistencia" />
-      ) : (
-        <div className='h-full w-[80%] flex flex-wrap justify-evenly'>
-  {asistencia.map((asistente, index) => {
-    const styles = getStyleByEstado(asistente.estado);
-    return (
-      <Perfilcontenedor
-        key={index}
-        nombre={asistente.nombre}
-        documento={asistente.documento}
-        customClassName={`m-[1rem] text-[14px] text-black bg-[#F0ECE3] pr-[0.5rem] py-[0.5rem] rounded-[10px]  transition-transform transform hover:-translate-y-2  duration-3000 shadow-md border-2  ${styles.borderColor}`}
-        Background={styles.Background}
-        icon={styles.icon}
-      />
-    );
-  })}
-</div>
+      <div className="flex flex-col items-center justify-evenly ">
+        <div className="flex  justify-evenly w-full ml-[85%]"> {/* Asegúrate de que el contenedor sea de ancho completo */}
+          <Buscador
+            value={inputValue}
+            onChange={handleInputChange}
+          />
+        </div>
+        {possibleMatch && (
+          <div
+            className='bg-white border border-gray-300 rounded-b-md shadow- p-2 max-w-max  cursor-pointer w-full text-center ' // Añadido w-full y text-center
+            onClick={() => verificarDocumento(possibleMatch.document)}
+          >
+            <p>¿Buscabas a {possibleMatch.name}?</p>
+            <button
+              className="bg-[#3F3D56] text-white font-bold py-1 px-2 rounded-[10px] ml-4"
+              onClick={handleRegisterAttendance}
+            >
+              Registrar Asistencia
+            </button>
+          </div>
+        )}
+      </div>
+      <div className='my-[3rem] w-[50%] flex-row justify-evenly border-2 border-[#444444] rounded-md shadow-xl'>
+        <AsistenceCarrusel />
+      </div>
 
+      <h1 className='text-[3rem] my-[4rem]'>Asistencia del día</h1>
+      <StatusCard/>
+      {!showTable ? (
+        <img className='w-[300px] h-[300px]' src={asistence} alt="No hay asistencia" />
+      ) : (
+        <div className='mb-16 w-[85%] flex flex-wrap justify-evenly'>
+          <AsistenceTable users={asistencia} />
+        </div>
       )}
     </div>
-  )
-}
+  );
+};
