@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import { useLocation } from 'wouter';
-
 const statusColors = {
   'Activo': 'bg-[#FE8D32]',
-  'Inactivo': 'bg-[#5023A7]',
-  'Pendiente': 'bg-[#3F3D56]'
+  'Pendiente': 'bg-[#5023A7]',
+  'Inactivo': 'bg-[#3F3D56]'
 };
 
 const TableComponent = ({ users }) => {
@@ -28,7 +27,7 @@ const TableComponent = ({ users }) => {
               onMouseLeave={() => setHoveredIndex(null)}
             >
               <div
-                className={`w-3 h-9 rounded-[20px] mx-auto ${statusColors[user.status]} transition-all duration-200`}
+                className={`w-3 h-9 rounded-[20px] mx-auto ${statusColors[user.status.charAt(0).toUpperCase() + user.status.slice(1)]} transition-all duration-200`}
                 style={{
                   width: hoveredIndex === index ? '120px' : '14px',
                   height: '36px'

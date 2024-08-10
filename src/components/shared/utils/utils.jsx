@@ -31,7 +31,7 @@ export const statusColors = {
                 <div className={`absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-4 py-2 ${item.bg} ${item.textColor} text-sm rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 whitespace-nowrap
                   after:content-[''] after:absolute after:top-full after:left-1/2 after:-translate-x-1/2 
                   after:border-8 after:border-t-current after:border-r-transparent after:border-b-transparent after:border-l-transparent
-                  after:border-t-black`}
+                  after:border-t-[#000000]`}
                 >
                   {item.text}
                 </div>

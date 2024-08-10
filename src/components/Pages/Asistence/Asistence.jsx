@@ -3,9 +3,12 @@ import { ButtomHome } from '../../Shared/Button/Buttons';
 import { useLocation } from 'wouter';
 import asistence from '../../../assets/asistence.png';
 import AsistenceTable from '../../Shared/userTable/asistenceTable';
-import Buscador from '../../Shared/InputForms/InputForms';
+import {Buscador, AsistenceBuscador} from '../../Shared/InputForms/InputForms';
 import AsistenceCarrusel from '../../Carrusel/AsistenceCarrusel/carrusel2';
 import StatusCard from '../../Shared/utils/utils';
+import generateAsistencePDF from '../../Shared/GeneratePDF/AsistenceReport';
+
+
 
 export const Asistence = () => {
   const [location, setLocation] = useLocation();
@@ -55,66 +58,55 @@ export const Asistence = () => {
     }
   };
 
-  const handleRegisterAttendance = () => {
-    if (possibleMatch) {
-      verificarDocumento(possibleMatch.document);
+  const handleRegisterAttendance = (user) => {
+    if (user) {
+      verificarDocumento(user.document);
       setInputValue('');
       setPossibleMatch(null);
     }
   };
 
-  const getStyleByEstado = (estado) => {
-    return {
-      Background: statusColors[estado],
-      icon: statusColors[estado],
-      borderColor: statusColors[estado]
-    };
+  const handleGeneratePDF = () => {
+    generateAsistencePDF(asistencia);
   };
-
   return (
     <div className='bg-[#F0ECE3] w-full h-full flex flex-col flex-1 items-center relative'>
-      <div className='flex items-center justify-center w-full h-full mt-[4rem]'>
-        <div className='absolute left-[20%] top-[6.9%]' onClick={() => setLocation("/")}>
-          <ButtomHome
-            Text={'Regresar'}
-          />
+      <div className='flex items-center justify-center w-full h-[3.2rem] '>
+        <div className='absolute left-[20%] top-[6%]' onClick={() => setLocation("/")}>
+          <ButtomHome Text={'Regresar'} />
         </div>
       </div>
-      <div className="flex flex-col items-center justify-evenly ">
-        <div className="flex  justify-evenly w-full "> {/* Asegúrate de que el contenedor sea de ancho completo */}
-          <Buscador
-            value={inputValue}
-            onChange={handleInputChange}
-          />
-        </div>
-        {possibleMatch && (
-          <div
-            className='bg-white border border-gray-300 rounded-b-md shadow- p-2 max-w-max  cursor-pointer w-full text-center relative' // Añadido w-full y text-center
-            onClick={() => verificarDocumento(possibleMatch.document)}
-          >
-            <p>¿Buscabas a {possibleMatch.name}?</p>
-            <button
-              className="bg-[#3F3D56] text-white font-bold py-1 px-2 rounded-[10px] ml-4"
-              onClick={handleRegisterAttendance}
-            >
-              Registrar Asistencia
-            </button>
-          </div>
-        )}
+      <div className="flex flex-col items-center justify-evenly w-full ml-[25%]">
+      <AsistenceBuscador 
+          value={inputValue}
+          onChange={handleInputChange}
+          possibleMatch={possibleMatch}
+          onSelectMatch={verificarDocumento}
+          onRegisterAttendance={handleRegisterAttendance}
+        />
       </div>
       <div className='my-[3rem] w-[50%] flex-row justify-evenly border-2 border-[#444444] rounded-md shadow-xl'>
         <AsistenceCarrusel />
       </div>
-
-      <h1 className='text-[3rem] my-[4rem]'>Asistencia del día</h1>
+      
       <StatusCard/>
       {!showTable ? (
-        <img className='w-[300px] h-[300px]' src={asistence} alt="No hay asistencia" />
-      ) : (
-        <div className='mb-16 w-[85%] flex flex-wrap justify-evenly'>
-          <AsistenceTable users={asistencia} />
-        </div>
-      )}
+  <img className='w-[300px] h-[300px]' src={asistence} alt="No hay asistencia" />
+) : (
+  <div className='mb-16 w-[85%] flex flex-col items-center relative'>
+    <div className='absolute top-0 right-44  bottom-4 -mt-[4.5rem]'>
+      <button
+        onClick={handleGeneratePDF}
+        className="bg-[#5023A7] hover:bg-[#3f1c84] text-white font-bold py-2 px-4 rounded"
+      >
+        Generar PDF
+      </button>
+    </div>
+    <AsistenceTable users={asistencia} />
+  </div>
+)}
+
+      
     </div>
   );
 };
